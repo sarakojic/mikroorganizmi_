@@ -9,13 +9,13 @@
 #ifndef PotencijalniPrenosnik_h
 #define PotencijalniPrenosnik_h
 #include "parazit.hpp"
-class POTPREN{
+class Potpren{
 protected:
     string naziv;
     bool prenosnik;
-    PARAZIT NosiParazit;
+    Parazit NosiParazit;
 public:
-    POTPREN(string n="Potencijalni prenosnik ne postoji", bool p=false, const PARAZIT& par):naziv(n), prenosnik(p),NosiParazit(par){}
+    Potpren(string n="Potencijalni prenosnik ne postoji", bool p=false, const Parazit& par):naziv(n), prenosnik(p),NosiParazit(par){}
     
     
 };

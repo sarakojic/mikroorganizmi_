@@ -8,13 +8,14 @@
 
 #ifndef zivotinja_h
 #define zivotinja_h
+#include "covek.hpp"
 
-class ZIVOTINJA
+class Zivotinja
 {
 protected:
     string ime;
     bool slobodna;
-    COVEK Vlasnik;
+    Covek Vlasnik;
 public:
     
     

@@ -9,15 +9,15 @@
 #ifndef bakterija_h
 #define bakterija_h
 #include "mikroorganizam.hpp"
-enum OblikBakterije(koka,bacil, spiril)
-class BAKTERIJA:public MIKROORGANIZAM{
+enum OblikBakterije{koka,bacil, spiril}
+class Bakterija:public Mikroorganizam{
 protected:
     OblikBakterije bakterija;
 
 public:
-    BAKTERIJA() :MIKROORGANIZAM(), bakterija(koka){}
-     BAKTERIJA(string n, const BOLEST & b, OblikBakterije o ): MIKROORGANIZAM(n,b), bakterija(o){}
-     BAKTERIJA(const BAKTERIJA & b):MIKROORGANIZAM(b.naziv, b.bolest), bakterija(b.bakterija){}
+    Bakterija() :Mikroorganizam(), bakterija(koka){}
+     Bakterija(string n, OblikBakterije o ): Mikroorganizam(n), bakterija(o){}
+     Bakterija(const Bakterija & b):Mikroorganizam(b.naziv), bakterija(b.bakterija){}
     
 }
 

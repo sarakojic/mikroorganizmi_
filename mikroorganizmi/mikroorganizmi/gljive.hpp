@@ -8,7 +8,7 @@
 
 #ifndef gljive_h
 #define gljive_h
-class GLJIVE
+class Gljive
 {
 protected:
 public:

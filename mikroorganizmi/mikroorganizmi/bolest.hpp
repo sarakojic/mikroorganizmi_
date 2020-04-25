@@ -10,18 +10,21 @@
 #define bolest_h
 #include <iostream>
 #include "organ.hpp"
+#include "mikroorganizam.hpp"
 usingnamespace std;
-enum TipBolesti(bakterijska, virusna, parazitska);
+enum TipBolesti{bakterijska, virusna, parazitska};
 
-class BOLEST{
+class Bolest{
 protected:
     string naziv;
-    ORGAN NapadaOrgan;
+    Organ NapadaOrgan;
     int NivoNapadanja;
     TipBolesti tip;
+    Mikroorganizam izaziva[20];
+    
 public:
-    BOLEST():naziv(" "), NapadaOrgan(),NivoNapadanja(0), TipBolesti(virusna){}
-    BOLEST(string n,const ORGAN& no,int  nn,TipBolesti t ): naziv(n), NapadaOrgan(no), NivoNapadanja(nn), TipBolest(t){}
+    Bolest():naziv(" "), NapadaOrgan(),NivoNapadanja(0), TipBolesti(virusna){Izaziva[0]=Mikroorganizam();}
+    Bolest(string n,const Organ& no,int  nn,TipBolesti t , Mikroorganizam m[]): naziv(n), NapadaOrgan(no), NivoNapadanja(nn), TipBolest(t), izaziva(m){}
  
     
 }

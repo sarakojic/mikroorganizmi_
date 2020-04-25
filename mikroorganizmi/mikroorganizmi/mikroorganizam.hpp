@@ -8,16 +8,16 @@
 
 #ifndef mikroorganizam_h
 #define mikroorganizam_h
-#include "bolest.hpp"
-class MIKROORGANIZAM{
+
+class Mikroorganizam
 protected:
     string naziv;
-    BOLEST bolest;
+
     
 public:
-    MIKROORGANIZAM(string n, const BOLEST&b): naziv(n), bolest(b){}
-    MIKROORGANIZAM(): naziv(" "), bolest(){}
-    MIKROORGANIZAM(const MIKROORGANIZAM & m){naziv=m.naziv;bolest=m.bolest;}
+    Mikroorganizam(string n): naziv(n){}
+    Mikroorganizam(): naziv(" "){}
+    Mikroorganizam(const Mikroorganizam & m){naziv=m.naziv;}
     
 };
 

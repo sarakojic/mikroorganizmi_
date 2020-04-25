@@ -11,15 +11,15 @@
 #include <iostream>
 usingnamespace std;
 enum stanje{zdrav, zarazen};
-class ORGAN
+class Organ
 {
 protected:
     string ime;
     stanje StanjeOrgana;
     
 public:
-    ORGAN(string i=" ", stanje s= zdrav){ime=i;stanje=s;}
-    ORGAN(const ORGAN& o){ime=o.ime; StanjeOrgana=o.StanjeOrgana;}
+    Organ(string i=" ", stanje s= zdrav){ime=i;stanje=s;}
+    Organ(const Organ& o){ime=o.ime; StanjeOrgana=o.StanjeOrgana;}
 };
 
 

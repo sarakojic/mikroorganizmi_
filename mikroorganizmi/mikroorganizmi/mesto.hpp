@@ -9,12 +9,14 @@
 #ifndef mesto_h
 #define mesto_h
 #include<vector.h>
-class MESTO{
+#include<zivotinja.hpp>
+#include<covek.hpp>
+class Mesto{
 protected:
     string naziv;
     int povrsina;
-    vector<ZIVOTINJA> zivotinje;
-    vector<COVEK> ljudi;
+    vector<Zivotinja> zivotinje;
+    vector<Covek> ljudi;
  
 public:
 

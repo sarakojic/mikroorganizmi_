@@ -9,15 +9,15 @@
 #define lek_h
 #include "bolest.hpp"
 enum TipLeka{vakcina, pilula, operacija}
-class LEK
+class Lek
 {
 protected:
     TipLeka tip;
     string naziv;
     int NivoDelotvornosti;
-    BOLEST BolestKojuLeci;
+    Bolest BolestKojuLeci;
 public:
-   // LEK(TipLeka t=pilula, string n= "nepostojeci lek", int nd= 0):BolestkojuLeci(){}
+    Lek(TipLeka t=pilula, string n= "nepostojeci lek", int nd= 0): tip(t), naziv(n), NivoDelotvornosti(nd),BolestkojuLeci(){}
 
 
     
