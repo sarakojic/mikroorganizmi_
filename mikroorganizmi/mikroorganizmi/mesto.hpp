@@ -8,6 +8,18 @@
 
 #ifndef mesto_h
 #define mesto_h
+#include<vector.h>
+class MESTO{
+protected:
+    string naziv;
+    int povrsina;
+    vector<ZIVOTINJA> zivotinje;
+    vector<COVEK> ljudi;
+ 
+public:
+
+    
+};
 
 
 #endif /* mesto_h */

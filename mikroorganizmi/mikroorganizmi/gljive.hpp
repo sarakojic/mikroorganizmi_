@@ -8,6 +8,12 @@
 
 #ifndef gljive_h
 #define gljive_h
+class GLJIVE
+{
+protected:
+public:
+    
+};
 
 
 #endif /* gljive_h */

@@ -36,6 +36,8 @@
 		560B8EF324507A6F00F6A88A /* zivotinja.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = zivotinja.hpp; sourceTree = "<group>"; };
 		560B8EF424507D0E00F6A88A /* hrana.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hrana.hpp; sourceTree = "<group>"; };
 		560B8EF524507E5C00F6A88A /* mesto.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mesto.hpp; sourceTree = "<group>"; };
+		5614F3052454789A006C5D00 /* mikroorganizam.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mikroorganizam.hpp; sourceTree = "<group>"; };
+		5642AE202450A14300439A1C /* organ.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = organ.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,9 @@
 				560B8EEC2450796200F6A88A /* virus.hpp */,
 				560B8EEF245079A400F6A88A /* bolest.hpp */,
 				560B8EEE2450799400F6A88A /* parazit.hpp */,
+				5614F3052454789A006C5D00 /* mikroorganizam.hpp */,
 				560B8EEA2450792700F6A88A /* covek.hpp */,
+				5642AE202450A14300439A1C /* organ.hpp */,
 				560B8EED2450797B00F6A88A /* gljive.hpp */,
 				560B8EF324507A6F00F6A88A /* zivotinja.hpp */,
 				560B8EF0245079B700F6A88A /* lek.hpp */,

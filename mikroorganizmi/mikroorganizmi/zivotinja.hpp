@@ -9,5 +9,15 @@
 #ifndef zivotinja_h
 #define zivotinja_h
 
+class ZIVOTINJA
+{
+protected:
+    string ime;
+    bool slobodna;
+    COVEK Vlasnik;
+public:
+    
+    
+    };
 
 #endif /* zivotinja_h */

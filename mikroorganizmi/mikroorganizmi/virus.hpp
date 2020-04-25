@@ -8,6 +8,17 @@
 
 #ifndef virus_h
 #define virus_h
-
+#include "mikroorganizam.hpp"
+class VIRUS:public MIKROORGANIZAM{
+protected:
+    
+    
+public:
+    VIRUS() :MIKROORGANIZAM(){}
+    VIRUS(string n; const BOLEST & b; ): MIKROORGANIZAM(n,b){}
+    VIRUS(const BAKTERIJA & b):MIKROORGANIZAM(b.naziv, b.bolest){}
+ 
+    
+}
 
 #endif /* virus_h */
