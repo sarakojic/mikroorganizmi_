@@ -17,10 +17,10 @@ protected:
     int NivoDelotvornosti;
     Bolest BolestKojuLeci;
 public:
-    Lek(TipLeka t=pilula, string n= "nepostojeci lek", int nd= 0): tip(t), naziv(n), NivoDelotvornosti(nd),BolestkojuLeci(){}
-
+    Lek(): tip(pilula), naziv(" "), NivoDelotvornosti(0),BolestkojuLeci(){}
+    Lek(TipLeka t, string n, int nd,const Bolest &b): tip(t), naziv(n), NivoDelotvornosti(nd),BolestkojuLeci(b){}
+    Lek(TipLeka t, string n, int nd, Bolest &b): tip(t), naziv(n), NivoDelotvornosti(nd),BolestkojuLeci(b){}
 
     
-};
-
+};  
 #endif /* lek_h */
