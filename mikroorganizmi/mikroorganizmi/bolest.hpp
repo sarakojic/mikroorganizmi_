@@ -21,7 +21,7 @@ protected:
     TipBolesti tip;
 public:
     BOLEST():naziv(" "), NapadaOrgan(),NivoNapadanja(0), TipBolesti(virusna){}
-    BOLEST(string n; ORGAN& no; int  nn; TipBolesti t ): naziv(n), NapadaOrgan(no), NivoNapadanja(nn), TipBolest(t){}
+    BOLEST(string n;const ORGAN& no; int  nn; TipBolesti t ): naziv(n), NapadaOrgan(no), NivoNapadanja(nn), TipBolest(t){}
  
     
 }
