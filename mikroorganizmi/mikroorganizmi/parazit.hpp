@@ -16,7 +16,7 @@ protected:
 public:
     PARAZIT() :MIKROORGANIZAM(), tipParazita(ameba){}
     PARAZIT(string n, const BOLEST & b, vrsteParazita p ): MIKROORGANIZAM(n,b), tipParazita(p){}
-    PARAZIT(const PARAZIT & p):MIKROORGANIZAM(p.naziv, p.bolest), p.tipParazita{}
+    PARAZIT(const PARAZIT & p):MIKROORGANIZAM(p.naziv, p.bolest),tipParazita(p.tipParazita) {}
    
 }
 

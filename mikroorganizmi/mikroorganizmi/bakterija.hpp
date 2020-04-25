@@ -17,7 +17,7 @@ protected:
 public:
     BAKTERIJA() :MIKROORGANIZAM(), bakterija(koka){}
      BAKTERIJA(string n, const BOLEST & b, OblikBakterije o ): MIKROORGANIZAM(n,b), bakterija(o){}
-     BAKTERIJA(const BAKTERIJA & b):MIKROORGANIZAM(b.naziv, b.bolest), b.tipParazita{}
+     BAKTERIJA(const BAKTERIJA & b):MIKROORGANIZAM(b.naziv, b.bolest), bakterija(b.bakterija){}
     
 }
 
