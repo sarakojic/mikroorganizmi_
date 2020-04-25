@@ -18,7 +18,7 @@ protected:
     stanje StanjeOrgana;
     
 public:
-    ORGAN(string i=" "; stanje s= zdrav){ime=i;stanje=s;}
+    ORGAN(string i=" ", stanje s= zdrav){ime=i;stanje=s;}
     ORGAN(const ORGAN& o){ime=o.ime; StanjeOrgana=o.StanjeOrgana;}
 };
 

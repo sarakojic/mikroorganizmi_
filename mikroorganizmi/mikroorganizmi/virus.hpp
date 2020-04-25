@@ -15,7 +15,7 @@ protected:
     
 public:
     VIRUS() :MIKROORGANIZAM(){}
-    VIRUS(string n; const BOLEST & b; ): MIKROORGANIZAM(n,b){}
+    VIRUS(string n, const BOLEST & b ): MIKROORGANIZAM(n,b){}
     VIRUS(const BAKTERIJA & b):MIKROORGANIZAM(b.naziv, b.bolest){}
  
     

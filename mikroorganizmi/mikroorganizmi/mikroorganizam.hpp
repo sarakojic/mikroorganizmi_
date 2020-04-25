@@ -15,9 +15,9 @@ protected:
     BOLEST bolest;
     
 public:
-    MIKROORGANIZAM(string n; BOLEST&b): naziv(n), bolest(b){}
+    MIKROORGANIZAM(string n, const BOLEST&b): naziv(n), bolest(b){}
     MIKROORGANIZAM(): naziv(" "), bolest(){}
-    MIKROORGANIZAM(const MIKROORGANIZAM & m): {naziv=m.naziv;bolest=m.bolest;}
+    MIKROORGANIZAM(const MIKROORGANIZAM & m){naziv=m.naziv;bolest=m.bolest;}
     
 };
 
