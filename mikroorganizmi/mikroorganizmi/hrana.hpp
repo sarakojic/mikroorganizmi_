@@ -15,7 +15,7 @@ protected:
     int NivoPovecanjaImuniteta;
     bool pojedena;
 public:
-    HRANA(string i= "Ova hrana je nepostojeca", int n= 0; int p= false){ime=i;NivoPovecanjaImuniteta=n;pojedena= p}
+    HRANA(string i= "Ova hrana je nepostojeca", int n= 0, int p= false){ime=i;NivoPovecanjaImuniteta=n;pojedena= p}
     
 }
 
