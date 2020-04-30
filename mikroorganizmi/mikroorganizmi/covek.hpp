@@ -31,7 +31,7 @@ public :
     Covek(int imnt,string i, string p,StanjeCoveka s,int g,const Mesto& trenpoz, const Organ& zarorg,polCoveka pl ): imunitet(imnt), ime(i), prezime(p), stanje(se), godine(g),TrentutnaPozicija(trenpoz), Zarazen Organ(zarorg), pol(pl) {}
      Covek( ): imunitet(0), ime(" "), prezime(" "), stanje(zdrav), godine(0),TrentutnaPozicija(), ZarazenOrgan(), bolest(),pol(drugo) {}
     
-    void Zarazi(Bolest b)
+    void Zarazi(Bolest &b)
     {
         bolest=b;//kad budemo radili vektore napravicu da moze da postoji vektor bolesti tako da cu tad izmeniti ovo ali za sada cu ovako da napisem(isto vazi i za organe)
         ZarazenOrgan=b.getOrgan();
@@ -58,7 +58,7 @@ public :
         }
         
     }
-    void Izleci(Lek l)
+    void Izleci(Lek &l)
     {
         if (l.getTip()==vakcina)
         {
