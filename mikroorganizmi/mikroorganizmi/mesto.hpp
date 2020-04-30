@@ -14,9 +14,10 @@
 class Mesto{
 protected:
     string naziv;
-    int povrsina;
+    double povrsina;
     vector<Zivotinja> zivotinje;
     vector<Covek> ljudi;
+    double gustina;
  
 public:
 

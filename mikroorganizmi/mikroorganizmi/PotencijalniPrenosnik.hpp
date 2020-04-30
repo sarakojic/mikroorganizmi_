@@ -15,7 +15,8 @@ protected:
     bool prenosnik;
     Parazit NosiParazit;
 public:
-    Potpren(string n="Potencijalni prenosnik ne postoji", bool p=false, const Parazit& par):naziv(n), prenosnik(p),NosiParazit(par){}
+    Potpren(string n, bool p, const Parazit& par):naziv(n), prenosnik(p),NosiParazit(par){}
+    Potpren():naziv(" "), prenosnik(false),NosiParazit(){}
     
     
 };

@@ -9,6 +9,9 @@
 #include <iostream>
 using namespace std;
 int main(int argc, const char * argv[]) {
-  
+   //METODE SU URADJENE U KLASI COVEK
+  // Program sluzi za pracenje infekcija, lecenje, ozdravljenja, smrtnost i uticaja zivih organizama (mikroorganizama, zivotinja i drugih ljudi) na zdravstveno stanje ljudske populacije.
+  //  Program  ce sadrzati file (bazu podataka) kao neku vrstu enciklopedije  koji ce cuvati podatke o tome koju bolest leci koji "lek". Kojoj se moze pristupiti tokom pokretanja programa, file koji cuva sva "desavanja" u programu dakle sva stanja ljudi i njihove interakcije.
+  // U programu se prave ljudi koji se na osnovu razlicitih ponasanja mogu zaraziti ili izleciti. Na primer postoji klasa mesto, gde velika gustina(broj ljudi i zivotinja podeljen sa povrsinom) i ako je neko medju njima vec zarazen, moze uzrokovati zarazom svih ostalih koji se nalaze na ovoj poziciji.
     return 0;
 }

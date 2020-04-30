@@ -25,8 +25,12 @@ protected:
 public:
     Bolest():naziv(" "), NapadaOrgan(),NivoNapadanja(0), TipBolesti(virusna){Izaziva[0]=Mikroorganizam();}
     Bolest(string n,const Organ& no,int  nn,TipBolesti t , Mikroorganizam m[]): naziv(n), NapadaOrgan(no), NivoNapadanja(nn), TipBolest(t), izaziva(m){}
- 
-    
+    string getNaziv(){return naziv;}
+    Organ getOrgan(){return NapadaOrgan;}
+    int getNN(){return NivoNapadanja;}
+    TipBolesti getTB(){return tip;}
+    Mikroorganizam getNaziv(){return izaziva;}
+
 }
 
 

@@ -9,7 +9,7 @@
 #ifndef bakterija_h
 #define bakterija_h
 #include "mikroorganizam.hpp"
-enum OblikBakterije{koka,bacil, spiril}
+enum OblikBakterije{koka, bacil, spiril}
 class Bakterija:public Mikroorganizam{
 protected:
     OblikBakterije bakterija;

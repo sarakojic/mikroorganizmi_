@@ -20,6 +20,23 @@ public:
     Lek(): tip(pilula), naziv(" "), NivoDelotvornosti(0),BolestkojuLeci(){}
     Lek(TipLeka t, string n, int nd,const Bolest &b): tip(t), naziv(n), NivoDelotvornosti(nd),BolestkojuLeci(b){}
     Lek(TipLeka t, string n, int nd, Bolest &b): tip(t), naziv(n), NivoDelotvornosti(nd),BolestkojuLeci(b){}
+    TipLeka getTip()
+    {
+        return tip;
+    }
+    Bolest getBolest()
+    {
+        return BolestKojuLeci;
+    }
+    string getNaziv()
+    {
+        return naziv;
+    }
+    int getND()
+    {
+        return NivoDelotvornosti;
+    }
+
 
     
 };  
