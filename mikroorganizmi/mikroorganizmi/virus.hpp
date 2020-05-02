@@ -9,16 +9,16 @@
 #ifndef virus_h
 #define virus_h
 #include "mikroorganizam.hpp"
-class VIRUS:public Mikroorganizam{
+class Virus:public Mikroorganizam{
 protected:
     
     
 public:
-    VIRUS() :Mikroorganizam(){}
-    VIRUS(string n ): Mikroorganizam(n){}
-    VIRUS(const Virus & v):Mikroorganizam(v.naziv){}
+    Virus() :Mikroorganizam(){}
+    Virus(string n ): Mikroorganizam(n){}
+    Virus(const Virus & v):Mikroorganizam(v.naziv){}
  
     
-}
+};
 
 #endif /* virus_h */

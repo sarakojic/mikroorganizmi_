@@ -8,7 +8,7 @@
 #ifndef lek_h
 #define lek_h
 #include "bolest.hpp"
-enum TipLeka{vakcina, pilula, operacija}
+enum TipLeka{vakcina, pilula, operacija};
 class Lek
 {
 protected:
@@ -17,9 +17,9 @@ protected:
     int NivoDelotvornosti;
     Bolest BolestKojuLeci;
 public:
-    Lek(): tip(pilula), naziv(" "), NivoDelotvornosti(0),BolestkojuLeci(){}
-    Lek(TipLeka t, string n, int nd,const Bolest &b): tip(t), naziv(n), NivoDelotvornosti(nd),BolestkojuLeci(b){}
-    Lek(TipLeka t, string n, int nd, Bolest &b): tip(t), naziv(n), NivoDelotvornosti(nd),BolestkojuLeci(b){}
+    Lek(): tip(pilula), naziv(" "), NivoDelotvornosti(0),BolestKojuLeci(){}
+    Lek(TipLeka t, string n, int nd,const Bolest &b): tip(t), naziv(n), NivoDelotvornosti(nd),BolestKojuLeci(b){}
+    Lek(TipLeka t, string n, int nd, Bolest &b): tip(t), naziv(n), NivoDelotvornosti(nd),BolestKojuLeci(b){}
     TipLeka getTip()
     {
         return tip;

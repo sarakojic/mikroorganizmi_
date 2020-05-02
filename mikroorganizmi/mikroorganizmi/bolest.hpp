@@ -11,7 +11,7 @@
 #include <iostream>
 #include "organ.hpp"
 #include "mikroorganizam.hpp"
-usingnamespace std;
+using namespace std;
 enum TipBolesti{bakterijska, virusna, parazitska};
 
 class Bolest{
@@ -20,18 +20,25 @@ protected:
     Organ NapadaOrgan;
     int NivoNapadanja;
     TipBolesti tip;
-    Mikroorganizam izaziva[20];
+    vector<Mikroorganizam> izaziva;
     
 public:
-    Bolest():naziv(" "), NapadaOrgan(),NivoNapadanja(0), TipBolesti(virusna){Izaziva[0]=Mikroorganizam();}
-    Bolest(string n,const Organ& no,int  nn,TipBolesti t , Mikroorganizam m[]): naziv(n), NapadaOrgan(no), NivoNapadanja(nn), TipBolest(t), izaziva(m){}
+    Bolest():naziv(" "), NapadaOrgan(),NivoNapadanja(0), tip(virusna){izaziva.push_back(Mikroorganizam());}
+    
+    Bolest(string n,const Organ& no,int  nn,TipBolesti t ,const Mikroorganizam & m):
+    naziv(n), NapadaOrgan(no), NivoNapadanja(nn), tip(t)
+    {
+        izaziva.push_back(Mikroorganizam(m));
+    }
+
+
     string getNaziv(){return naziv;}
     Organ getOrgan(){return NapadaOrgan;}
     int getNN(){return NivoNapadanja;}
     TipBolesti getTB(){return tip;}
-    Mikroorganizam getNaziv(){return izaziva;}
+    vector< Mikroorganizam>getMikroorganizam(){return izaziva;}
 
-}
+};
 
 
 #endif /* bolest_h */

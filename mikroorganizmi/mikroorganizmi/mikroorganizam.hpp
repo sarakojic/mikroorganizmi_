@@ -8,8 +8,9 @@
 
 #ifndef mikroorganizam_h
 #define mikroorganizam_h
-
+using namespace std;
 class Mikroorganizam
+{
 protected:
     string naziv;
 

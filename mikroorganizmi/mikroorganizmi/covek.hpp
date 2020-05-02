@@ -14,7 +14,7 @@
 #include "lek.hpp"
 #define MAX 100
 #define MIN 0
-enum StanjeCoveka{zdrav, bolestan, mrtav};
+enum StanjeCoveka{zdrav_covek, bolestan, mrtav};
 enum polCoveka{muski, zenski,drugo};
 class Covek{
 protected:
@@ -28,18 +28,27 @@ protected:
     Organ ZarazenOrgan;
     Bolest bolest;
 public :
-    Covek(int imnt,string i, string p,StanjeCoveka s,int g,const Mesto& trenpoz, const Organ& zarorg,polCoveka pl ): imunitet(imnt), ime(i), prezime(p), stanje(se), godine(g),TrentutnaPozicija(trenpoz), Zarazen Organ(zarorg), pol(pl) {}
-     Covek( ): imunitet(0), ime(" "), prezime(" "), stanje(zdrav), godine(0),TrentutnaPozicija(), ZarazenOrgan(), bolest(),pol(drugo) {}
+    Covek(int imnt,string i, string p,StanjeCoveka s,int g,const Mesto& trenpoz, const Organ& zarorg,polCoveka pl ): TrenutnaPozicija(trenpoz), ZarazenOrgan(zarorg)
+    {
+        imunitet=imnt;
+        ime=i;
+        prezime=p;
+        stanje=s;
+        pol=pl;
+        godine=g;
+    }
+    Covek():TrenutnaPozicija(), ZarazenOrgan(), bolest() {imunitet=0; ime=" "; prezime=" "; stanje=zdrav_covek; godine=0; pol=drugo;}
+    Covek(const Covek &c){imunitet=c.imunitet; ime=c.ime; prezime= c.prezime; stanje= c.stanje; pol= c.pol; godine= c.godine; TrenutnaPozicija= c.TrenutnaPozicija; ZarazenOrgan=c.ZarazenOrgan;}
     
     void Zarazi(Bolest &b)
     {
         bolest=b;//kad budemo radili vektore napravicu da moze da postoji vektor bolesti tako da cu tad izmeniti ovo ali za sada cu ovako da napisem(isto vazi i za organe)
         ZarazenOrgan=b.getOrgan();
         stanje=bolestan;
-        cout<<ime<<" "<<prezime<<" ima "<<bolest.getNaziv()<<endl
-        if (imunitet- b.getNN>=MIN)
+        cout<<ime<<" "<<prezime<<" ima "<<bolest.getNaziv()<<endl;
+        if (imunitet- b.getNN()>=MIN)
         {
-        imunitet= imunitet- b.getNN;
+            imunitet= imunitet- b.getNN();
         }
         else
         {
@@ -63,7 +72,7 @@ public :
         if (l.getTip()==vakcina)
         {
             cout<<ime<<" "<<prezime<<" je  vakcinisan";
-            if (pol=zensko){
+            if (pol==zenski){
                 cout<<"la";
             }
             cout<<" sa "<< l.getNaziv()<<endl;
@@ -71,7 +80,7 @@ public :
         else if (l.getTip()==pilula)
         {
             cout<<ime<<" "<<prezime<<" je uze";
-            if (pol=zensko){
+            if (pol==zenski){
                 cout<<"la";
             }
             else{
@@ -82,7 +91,7 @@ public :
         else  if (l.getTip()==operacija)
         {
             cout<<ime<<" "<<prezime<<" ima";
-            if (pol=zensko){
+            if (pol==zenski){
                 cout<<"la";
             }
             else{
@@ -91,7 +100,13 @@ public :
             cout<<l.getNaziv()<<endl;
             
         }
-        if(l.getBolest()==bolest)
+        /*string getNaziv(){return naziv;}
+        Organ getOrgan(){return NapadaOrgan;}
+        int getNN(){return NivoNapadanja;}
+        TipBolesti getTB(){return tip;}
+        vector< Mikroorganizam>getMikroorganizam(){return izaziva;};*/
+        if((l.getBolest()).getNaziv()==bolest.getNaziv()&&((l.getBolest()).getOrgan()).getIme()==(bolest.getOrgan()).getIme()&&((l.getBolest()).getOrgan()).getStanje()==(bolest.getOrgan()).getStanje()&&(l.getBolest()).getNN()==bolest.getNN()&&(l.getBolest()).getTB()==bolest.getTB()&&(l.getBolest()).getMikroorganizam()==bolest.getMikroorganizam())
+            
         {
             if (imunitet+ l.getND()<=MAX)
             {
@@ -100,7 +115,7 @@ public :
             else
             {
                 imunitet= 100;
-                stanje=zdrav;
+                stanje=zdrav_covek;
             }
             
         }
@@ -124,6 +139,6 @@ public :
         
     }
     
-}
+};
 
 #endif /* covek_h */

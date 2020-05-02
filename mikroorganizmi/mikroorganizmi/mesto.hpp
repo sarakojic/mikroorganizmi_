@@ -8,9 +8,8 @@
 
 #ifndef mesto_h
 #define mesto_h
-#include<vector.h>
-#include<zivotinja.hpp>
-#include<covek.hpp>
+#include "zivotinja.hpp"
+#include "covek.hpp"
 class Mesto{
 protected:
     string naziv;
@@ -20,6 +19,8 @@ protected:
     double gustina;
  
 public:
+    Mesto(){naziv=" "; povrsina=0; zivotinje.push_back(Zivotinja());ljudi.push_back(Covek());}
+    Mesto(const Mesto &m){naziv=m.naziv; povrsina=m.povrsina; zivotinje=m.zivotinje; ljudi=m.ljudi; gustina=m.gustina;}
 
     
 };

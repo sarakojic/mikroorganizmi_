@@ -9,7 +9,7 @@
 #ifndef bakterija_h
 #define bakterija_h
 #include "mikroorganizam.hpp"
-enum OblikBakterije{koka, bacil, spiril}
+enum OblikBakterije{koka, bacil, spiril};
 class Bakterija:public Mikroorganizam{
 protected:
     OblikBakterije bakterija;
@@ -19,7 +19,7 @@ public:
      Bakterija(string n, OblikBakterije o ): Mikroorganizam(n), bakterija(o){}
      Bakterija(const Bakterija & b):Mikroorganizam(b.naziv), bakterija(b.bakterija){}
     
-}
+};
 
 
 #endif /* bakterija_h */

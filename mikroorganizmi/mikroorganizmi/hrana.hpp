@@ -8,6 +8,7 @@
 
 #ifndef hrana_h
 #define hrana_h
+using namespace std;
 class Hrana
 {
 protected:
@@ -15,8 +16,8 @@ protected:
     int NivoPovecanjaImuniteta;
     bool pojedena;
 public:
-    Hrana(string i= "Ova hrana je nepostojeca", int n= 0, int p= false){ime=i;NivoPovecanjaImuniteta=n;pojedena= p}
+    Hrana(string i= "Ova hrana je nepostojeca", int n= 0, int p= false){ime=i;NivoPovecanjaImuniteta=n;pojedena= p;}
     
-}
+};
 
 #endif /* hrana_h */

@@ -9,15 +9,15 @@
 #ifndef parazit_h
 #define parazit_h
 #include "mikroorganizam.hpp"
-enum vrsteParazita{ameba, bicar, trepljar, sporozoa}
+enum vrsteParazita{ameba, bicar, trepljar, sporozoa};
 class Parazit:public Mikroorganizam{
 protected:
     vrsteParazita tipParazita;
 public:
     Parazit() :Mikroorganizam(), tipParazita(ameba){}
-    Parazit(string n, const Bolest & b, vrsteParazita p ): Mikroorganizam(n), tipParazita(p){}
-    Parazit(const Parazit & p):Mikroorganizam(p.naziv, p.bolest),tipParazita(p.tipParazita) {}
+    Parazit(string n, vrsteParazita p ): Mikroorganizam(n), tipParazita(p){}
+    Parazit(const Parazit & p):Mikroorganizam(p.naziv),tipParazita(p.tipParazita) {}
    
-}
+};
 
 #endif /* parazit_h */

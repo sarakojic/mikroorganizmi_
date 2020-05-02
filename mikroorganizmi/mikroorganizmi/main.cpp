@@ -7,6 +7,21 @@
 //
 
 #include <iostream>
+#include <vector>
+#include "PotencijalniPrenosnik.hpp"
+#include "hrana.hpp"
+#include "bakterija.hpp"
+#include "virus.hpp"
+#include "bolest.hpp"
+#include "parazit.hpp"
+#include "mikroorganizam.hpp"
+#include "organ.hpp"
+#include "covek.hpp"
+#include "gljive.hpp"
+#include "zivotinja.hpp"
+#include "lek.hpp"
+#include "mesto.hpp"
+
 using namespace std;
 int main(int argc, const char * argv[]) {
    //METODE SU URADJENE U KLASI COVEK
