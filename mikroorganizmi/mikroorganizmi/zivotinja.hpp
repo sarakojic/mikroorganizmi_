@@ -15,11 +15,11 @@ class Zivotinja
 protected:
     string ime;
     bool slobodna;
-    class Covek{} vlasnik;
+    Covek vlasnik;
 public:
     Zivotinja():ime(" "), slobodna(true), vlasnik(){}
     Zivotinja(string i, bool s,const Covek &v):ime(i), slobodna(s),
-    vlasnik(){}
+    vlasnik(v){}
 
     
 };

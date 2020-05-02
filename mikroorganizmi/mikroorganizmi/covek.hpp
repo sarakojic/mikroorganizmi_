@@ -8,7 +8,7 @@
 
 #ifndef covek_h
 #define covek_h
-#include "mesto.hpp"
+
 #include "organ.hpp"
 #include "bolest.hpp"
 #include "lek.hpp"
@@ -24,11 +24,10 @@ protected:
     StanjeCoveka stanje;
     polCoveka pol;
     int godine;
-    Mesto TrenutnaPozicija;
     Organ ZarazenOrgan;
     Bolest bolest;
 public :
-    Covek(int imnt,string i, string p,StanjeCoveka s,int g,const Mesto& trenpoz, const Organ& zarorg,polCoveka pl ): TrenutnaPozicija(trenpoz), ZarazenOrgan(zarorg)
+    Covek(int imnt,string i, string p,StanjeCoveka s,int g, const Organ& zarorg,polCoveka pl ):  ZarazenOrgan(zarorg)
     {
         imunitet=imnt;
         ime=i;
@@ -37,8 +36,8 @@ public :
         pol=pl;
         godine=g;
     }
-    Covek():TrenutnaPozicija(), ZarazenOrgan(), bolest() {imunitet=0; ime=" "; prezime=" "; stanje=zdrav_covek; godine=0; pol=drugo;}
-    Covek(const Covek &c){imunitet=c.imunitet; ime=c.ime; prezime= c.prezime; stanje= c.stanje; pol= c.pol; godine= c.godine; TrenutnaPozicija= c.TrenutnaPozicija; ZarazenOrgan=c.ZarazenOrgan;}
+    Covek(): ZarazenOrgan(), bolest() {imunitet=0; ime=" "; prezime=" "; stanje=zdrav_covek; godine=0; pol=drugo;}
+    Covek(const Covek &c){imunitet=c.imunitet; ime=c.ime; prezime= c.prezime; stanje= c.stanje; pol= c.pol; godine= c.godine;  ZarazenOrgan=c.ZarazenOrgan;}
     
     void Zarazi(Bolest &b)
     {
