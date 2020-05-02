@@ -12,6 +12,7 @@
 #include "organ.hpp"
 #include "mikroorganizam.hpp"
 using namespace std;
+
 enum TipBolesti{bakterijska, virusna, parazitska};
 
 class Bolest{
@@ -30,7 +31,13 @@ public:
     {
         izaziva.push_back(Mikroorganizam(m));
     }
-
+    Bolest(const Bolest &b)
+       {
+           naziv=b.naziv;
+           NapadaOrgan=b.NapadaOrgan;
+           tip=b.tip;
+           izaziva=b.izaziva;
+       }
 
     string getNaziv(){return naziv;}
     Organ getOrgan(){return NapadaOrgan;}

@@ -19,6 +19,7 @@ public:
     Mikroorganizam(string n): naziv(n){}
     Mikroorganizam(): naziv(" "){}
     Mikroorganizam(const Mikroorganizam & m){naziv=m.naziv;}
+    string getNaziv(){return naziv;}
     
 };
 

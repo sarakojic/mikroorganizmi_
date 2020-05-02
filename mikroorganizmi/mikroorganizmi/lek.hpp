@@ -19,7 +19,14 @@ protected:
 public:
     Lek(): tip(pilula), naziv(" "), NivoDelotvornosti(0),BolestKojuLeci(){}
     Lek(TipLeka t, string n, int nd,const Bolest &b): tip(t), naziv(n), NivoDelotvornosti(nd),BolestKojuLeci(b){}
-    Lek(TipLeka t, string n, int nd, Bolest &b): tip(t), naziv(n), NivoDelotvornosti(nd),BolestKojuLeci(b){}
+    Lek(const Lek &l)
+    {
+        tip=l.tip;
+        naziv=l.naziv;
+        NivoDelotvornosti=l.NivoDelotvornosti;
+        BolestKojuLeci=l.BolestKojuLeci;
+        
+    }
     TipLeka getTip()
     {
         return tip;

@@ -17,7 +17,7 @@ protected:
     bool pojedena;
 public:
     Hrana(string i= "Ova hrana je nepostojeca", int n= 0, int p= false){ime=i;NivoPovecanjaImuniteta=n;pojedena= p;}
-    
+    Hrana(const Hrana &h ){ime=h.ime;NivoPovecanjaImuniteta=h.NivoPovecanjaImuniteta;pojedena= h.pojedena;}
 };
 
 #endif /* hrana_h */

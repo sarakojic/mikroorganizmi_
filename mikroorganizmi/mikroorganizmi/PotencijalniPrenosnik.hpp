@@ -18,6 +18,7 @@ protected:
 public:
     Potpren(string n, bool p, const Parazit& par):naziv(n), prenosnik(p),NosiParazit(par){}
     Potpren():naziv(" "), prenosnik(false),NosiParazit(){}
+    Potpren(const Potpren &pp){naziv=pp.naziv; prenosnik=pp.prenosnik; NosiParazit=pp.NosiParazit;}
     
     
 };

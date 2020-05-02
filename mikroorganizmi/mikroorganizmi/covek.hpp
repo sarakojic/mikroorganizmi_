@@ -8,14 +8,25 @@
 
 #ifndef covek_h
 #define covek_h
-
 #include "organ.hpp"
 #include "bolest.hpp"
 #include "lek.hpp"
+#include "mikroorganizam.hpp"
 #define MAX 100
 #define MIN 0
 enum StanjeCoveka{zdrav_covek, bolestan, mrtav};
 enum polCoveka{muski, zenski,drugo};
+bool porediMikroorganizme(vector<Mikroorganizam> m1, vector<Mikroorganizam>m2){
+    if (m1.size()!= m2.size()){
+        return false;
+    }
+    for (int i = 0 ; i < m1.size(); i ++){
+        if (m1[i].getNaziv()!=m2[i].getNaziv()){
+            return false;
+        }
+    }
+    return true;
+}
 class Covek{
 protected:
     int imunitet;
@@ -41,7 +52,7 @@ public :
     
     void Zarazi(Bolest &b)
     {
-        bolest=b;//kad budemo radili vektore napravicu da moze da postoji vektor bolesti tako da cu tad izmeniti ovo ali za sada cu ovako da napisem(isto vazi i za organe)
+        bolest=b;
         ZarazenOrgan=b.getOrgan();
         stanje=bolestan;
         cout<<ime<<" "<<prezime<<" ima "<<bolest.getNaziv()<<endl;
@@ -104,7 +115,8 @@ public :
         int getNN(){return NivoNapadanja;}
         TipBolesti getTB(){return tip;}
         vector< Mikroorganizam>getMikroorganizam(){return izaziva;};*/
-        if((l.getBolest()).getNaziv()==bolest.getNaziv()&&((l.getBolest()).getOrgan()).getIme()==(bolest.getOrgan()).getIme()&&((l.getBolest()).getOrgan()).getStanje()==(bolest.getOrgan()).getStanje()&&(l.getBolest()).getNN()==bolest.getNN()&&(l.getBolest()).getTB()==bolest.getTB()&&(l.getBolest()).getMikroorganizam()==bolest.getMikroorganizam())
+        if((l.getBolest()).getNaziv()==bolest.getNaziv()&&((l.getBolest()).getOrgan()).getIme()==(bolest.getOrgan()).getIme()&&((l.getBolest()).getOrgan()).getStanje()==(bolest.getOrgan()).getStanje()&&(l.getBolest()).getNN()==bolest.getNN()&&(l.getBolest()).getTB()==bolest.getTB()&&porediMikroorganizme(l.getBolest().getMikroorganizam(),bolest.getMikroorganizam())==true)
+    
             
         {
             if (imunitet+ l.getND()<=MAX)
