@@ -72,14 +72,7 @@ int main(int argc, const char * argv[]) {
   //  Program  ce sadrzati file (bazu podataka) kao neku vrstu enciklopedije  koji ce cuvati podatke o tome koju bolest leci koji "lek". Kojoj se moze pristupiti tokom pokretanja programa, file koji cuva sva "desavanja" u programu dakle sva stanja ljudi i njihove interakcije.
   // U programu se prave ljudi koji se na osnovu razlicitih ponasanja mogu zaraziti ili izleciti. Na primer postoji klasa mesto, gde velika gustina(broj ljudi i zivotinja podeljen sa povrsinom) i ako je neko medju njima vec zarazen, moze uzrokovati zarazom svih ostalih koji se nalaze na ovoj poziciji.
 
-   /* string naziv;
-    Organ NapadaOrgan;
-    int NivoNapadanja;
-    TipBolesti tip;
-    vector<Mikroorganizam> izaziva;
-    Malarija|Crvena Krvna zrnca|zarazen|80|parazitska|Plasmodium|sporozoa
-    Tetanus|Nervni sistem|zarazen|85|bakterijska|Clostridium Tetani|bacil
-    Salmonela|Zeludačno-crevni trakt|zarazen|15|bakterijska|Enterobakteriaceae|bacil*/
+ 
 
     Parazit p1("Plasmodium",sporozoa),p2;
     Bakterija b1, b2("Clostridium Tetani",bacil), b3("Enterobakteriaceae",bacil);
