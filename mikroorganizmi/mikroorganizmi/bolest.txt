@@ -1,0 +1,3 @@
+Malarija|Crvena Krvna zrnca|zarazen|80|parazitska|Plasmodium|sporozoa
+Tetanus|Nervni sistem|zarazen|85|bakterijska|Clostridium Tetani|bacil
+Salmonela|Zeludacno-crevni trakt|zarazen|15|bakterijska|Enterobakteriaceae|bacil
