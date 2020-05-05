@@ -38,6 +38,7 @@
 		560B8EF524507E5C00F6A88A /* mesto.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mesto.hpp; sourceTree = "<group>"; };
 		5614F3052454789A006C5D00 /* mikroorganizam.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mikroorganizam.hpp; sourceTree = "<group>"; };
 		5642AE202450A14300439A1C /* organ.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = organ.hpp; sourceTree = "<group>"; };
+		564E5E7124618F8900FDF45F /* bolest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bolest.txt; path = ../../mikroorganizmi/bolest.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		560B8ED7245078D900F6A88A = {
 			isa = PBXGroup;
 			children = (
+				564E5E7124618F8900FDF45F /* bolest.txt */,
 				560B8EE2245078D900F6A88A /* mikroorganizmi */,
 				560B8EE1245078D900F6A88A /* Products */,
 			);

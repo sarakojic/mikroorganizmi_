@@ -38,15 +38,7 @@ protected:
     Organ ZarazenOrgan;
     Bolest bolest;
 public :
-    Covek(int imnt,string i, string p,StanjeCoveka s,int g, const Organ& zarorg,polCoveka pl ):  ZarazenOrgan(zarorg)
-    {
-        imunitet=imnt;
-        ime=i;
-        prezime=p;
-        stanje=s;
-        pol=pl;
-        godine=g;
-    }
+    Covek(int imnt,string i, string p,StanjeCoveka s,int g, const Organ& zarorg,polCoveka pl ):  ZarazenOrgan(zarorg){imunitet=imnt;ime=i;prezime=p;stanje=s;pol=pl;godine=g;}
     Covek(): ZarazenOrgan(), bolest() {imunitet=0; ime=" "; prezime=" "; stanje=zdrav_covek; godine=0; pol=drugo;}
     Covek(const Covek &c){imunitet=c.imunitet; ime=c.ime; prezime= c.prezime; stanje= c.stanje; pol= c.pol; godine= c.godine;  ZarazenOrgan=c.ZarazenOrgan;}
     
