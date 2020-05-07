@@ -24,6 +24,7 @@
 #include "mesto.hpp"
 
 using namespace std;
+int Mikroorganizam::brojM=0;
 
   void pisiTxt(string nazivFajla, string tekst, char mode='w')
   {
@@ -72,15 +73,27 @@ int main(int argc, const char * argv[]) {
   //  Program  ce sadrzati file (bazu podataka) kao neku vrstu enciklopedije  koji ce cuvati podatke o tome koju bolest leci koji "lek". Kojoj se moze pristupiti tokom pokretanja programa, file koji cuva sva "desavanja" u programu dakle sva stanja ljudi i njihove interakcije.
   // U programu se prave ljudi koji se na osnovu razlicitih ponasanja mogu zaraziti ili izleciti. Na primer postoji klasa mesto, gde velika gustina(broj ljudi i zivotinja podeljen sa povrsinom) i ako je neko medju njima vec zarazen, moze uzrokovati zarazom svih ostalih koji se nalaze na ovoj poziciji.
 
- 
+   /* string naziv;
+    Organ NapadaOrgan;
+    int NivoNapadanja;
+    TipBolesti tip;
+    vector<Mikroorganizam> izaziva;
+    Malarija|Crvena Krvna zrnca|zarazen|80|parazitska|Plasmodium|sporozoa
+    Tetanus|Nervni sistem|zarazen|85|bakterijska|Clostridium Tetani|bacil
+    Salmonela|Zeludačno-crevni trakt|zarazen|15|bakterijska|Enterobakteriaceae|bacil*/
 
+    cout<<Mikroorganizam::getBroj()<<endl;
     Parazit p1("Plasmodium",sporozoa),p2;
+    cout<<p1.getBroj()<<endl;
     Bakterija b1, b2("Clostridium Tetani",bacil), b3("Enterobakteriaceae",bacil);
+    cout<<p1.getBroj()<<endl;
     Virus v1, v2, v3;
+    cout<<p1.getBroj()<<endl;
     Organ o1("Crvena Krvna zrnca", zarazen), o2("Nervni sistem", zarazen), o3("Zeludacno-crevni trakt",zarazen);
     Bolest blst1("Malarija",o1,80, parazitska, p1), blst2("Tetanus",o2, 85,bakterijska,b2 ), blst3("Salmonela", o3, 15, bakterijska,b3);
 
     Covek c1, c2, c3;
+  
     Zivotinja z1, z2, z3;
     Lek l1, l2, l3;
     Mesto ms1, ms2, ms3;
@@ -91,7 +104,9 @@ int main(int argc, const char * argv[]) {
 
   pisiTxt(BolestiFajl, ulaz);*/
     
+    
    citajTxt("bolest.txt");
+    cout<<p1<<b2<<b3<<o1<<o2;
 
     
 

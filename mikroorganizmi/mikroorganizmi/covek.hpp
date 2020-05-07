@@ -37,6 +37,7 @@ protected:
     int godine;
     Organ ZarazenOrgan;
     Bolest bolest;
+
 public :
     Covek(int imnt,string i, string p,StanjeCoveka s,int g, const Organ& zarorg,polCoveka pl ):  ZarazenOrgan(zarorg){imunitet=imnt;ime=i;prezime=p;stanje=s;pol=pl;godine=g;}
     Covek(): ZarazenOrgan(), bolest() {imunitet=0; ime=" "; prezime=" "; stanje=zdrav_covek; godine=0; pol=drugo;}
@@ -141,6 +142,9 @@ public :
         }
         
     }
+
+
+
     
 };
 

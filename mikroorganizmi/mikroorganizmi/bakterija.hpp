@@ -18,8 +18,28 @@ public:
     Bakterija() :Mikroorganizam(), bakterija(koka){}
      Bakterija(string n, OblikBakterije o ): Mikroorganizam(n), bakterija(o){}
      Bakterija(const Bakterija & b):Mikroorganizam(b.naziv), bakterija(b.bakterija){}
-    
+     friend ostream& operator<<(ostream& izlaz, const Bakterija& b);
 };
+ostream& operator<<(ostream& izlaz, const Bakterija& b){
+    izlaz<<"Bakterija- ispis"<<endl;
+    izlaz<<"Naziv: "<<b.naziv<<endl;
+    izlaz<<"Oblik Bakterije: ";
+    if(b.bakterija==0)
+     {
+         izlaz<<"koka"<<endl;
+     }
+     if(b.bakterija==1)
+     {
+         izlaz<<"bacil"<<endl;
+     }
+     if(b.bakterija==2)
+     {
+         izlaz<<"spiril"<<endl;
+     }
+    izlaz<<endl;
+return izlaz;
+}
+
 
 
 #endif /* bakterija_h */
