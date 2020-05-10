@@ -81,7 +81,6 @@ int main(int argc, const char * argv[]) {
     Malarija|Crvena Krvna zrnca|zarazen|80|parazitska|Plasmodium|sporozoa
     Tetanus|Nervni sistem|zarazen|85|bakterijska|Clostridium Tetani|bacil
     Salmonela|Zeludačno-crevni trakt|zarazen|15|bakterijska|Enterobakteriaceae|bacil*/
-
     cout<<Mikroorganizam::getBroj()<<endl;
     Parazit p1("Plasmodium",sporozoa),p2;
     cout<<p1.getBroj()<<endl;
@@ -108,7 +107,6 @@ int main(int argc, const char * argv[]) {
    citajTxt("bolest.txt");
     cout<<p1<<b2<<b3<<o1<<o2;
 
-    
 
     
     return 0;

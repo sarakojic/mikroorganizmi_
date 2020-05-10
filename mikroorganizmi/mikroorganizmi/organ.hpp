@@ -22,26 +22,25 @@ public:
     Organ(const Organ& o){ime=o.ime; StanjeOrgana=o.StanjeOrgana;}
     string getIme(){return ime;}
     stanje getStanje(){return StanjeOrgana;}
-    friend ostream& operator<<(ostream& izlaz, const Organ& o);
-};
-ostream& operator<<(ostream& izlaz, const Organ& o){
-    izlaz<<"Organ- ispis"<<endl;
-    izlaz<<"Ime: "<<o.ime<<endl;
-    izlaz<<"Stanje organa: ";
-    if(o.StanjeOrgana==0)
-     {
-         izlaz<<"zdrav"<<endl;
-     }
-     if(o.StanjeOrgana==1)
-     {
-         izlaz<<"zarazen"<<endl;
-     }
-    izlaz<<endl;
- 
-  
-return izlaz;
-}
+    friend ostream& operator<<(ostream& izlaz, const Organ& o){
+        izlaz<<"Organ- ispis"<<endl;
+        izlaz<<"Ime: "<<o.ime<<endl;
+        izlaz<<"Stanje organa: ";
+        if(o.StanjeOrgana==0)
+         {
+             izlaz<<"zdrav"<<endl;
+         }
+         if(o.StanjeOrgana==1)
+         {
+             izlaz<<"zarazen"<<endl;
+         }
+        izlaz<<endl;
+     
+      
+    return izlaz;
+    }
 
+};
 
 
 
