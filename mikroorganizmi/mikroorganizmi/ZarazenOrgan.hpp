@@ -12,7 +12,6 @@
 #include "bolest.hpp"
 #include <vector>
 #include <iostream>
-using namespace std;
 class ZarazenOrgan:public Organ
 {
 protected:

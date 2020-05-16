@@ -10,7 +10,7 @@
 #define funkcije_h
 #include<iostream>
 
-using namespace std;
+
 void clearscr ( void )
 {
   for ( int i = 0; i < 100; i++ )

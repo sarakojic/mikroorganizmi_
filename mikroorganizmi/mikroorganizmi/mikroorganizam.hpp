@@ -9,9 +9,9 @@
 #ifndef mikroorganizam_h
 #define mikroorganizam_h
 #include <iostream>
-using namespace std;
+
 #include "organ.hpp"
-using namespace std;
+
 class Mikroorganizam
 {
 protected:

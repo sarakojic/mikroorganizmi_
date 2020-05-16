@@ -11,6 +11,7 @@
 #include"mesto.hpp"
 #include"hrana.hpp"
 #include"funkcije.h"
+
 class Restoran: public Mesto
 {
 protected:
@@ -48,8 +49,11 @@ public:
         cout<<"Vase jelo je pripremljeno"<<endl;
         return jelovnik[a-1];
     }
-    void dodajCoveka(const Covek & c){ljudi.push_back(c);}
-    int TipMesta(){return 1;}
+    
+    void dodajCoveka(const Covek & c){Mesto::dodajCoveka(c);}
+    void izadji(const Covek & c){Mesto::izadji(c);cout<<" restoran"<<endl;}
+ 
+    
     
 };
 

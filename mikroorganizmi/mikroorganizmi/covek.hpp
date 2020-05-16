@@ -39,7 +39,7 @@ bool porediMikroorganizme(vector<Mikroorganizam*> m1, vector<Mikroorganizam*>m2)
 ZarazenOrgan ZaraziOrg(Organ & o,Bolest & b){
 for (auto i=(b.getMikroorganizam()).begin(); i !=(b.getMikroorganizam()).end(); i ++)
 {
-    (*i)->ZaraziOrgan(o);
+      (*i)->ZaraziOrgan(o);
     
 }
     ZarazenOrgan zo(o,b) ;
@@ -64,8 +64,8 @@ public :
     Covek(int imnt,string i, string p,StanjeCoveka s,int g,polCoveka pl,int n )  {imunitet=imnt;ime=i;prezime=p;stanje=s;pol=pl;godine=g;novac=n;}
     Covek():zo(),bolest(), organ(){imunitet=0; ime=" "; prezime=" "; stanje=zdrav_covek; godine=0; pol=drugo;novac=0;}
     Covek(const Covek &c){imunitet=c.imunitet; ime=c.ime; prezime= c.prezime; stanje= c.stanje; pol= c.pol; godine= c.godine; zo=c.zo;bolest=c.bolest;organ=c.organ;novac=c.novac;}
-    string getIme(){return ime;}
-    string getPrezime(){return prezime;}
+    string getIme()const{return ime;}
+    string getPrezime()const{return prezime;}
     
     void Zarazi(Bolest &b, Organ &o)
     {
@@ -237,11 +237,12 @@ public :
         cout<<h.getIme()<<endl;
         
     }
-    polCoveka getPol(){return pol;}
-    StanjeCoveka getStanje(){return stanje;}
-    int GetBrojBolesti(){return(int) bolest.size();}
-    vector<Bolest> GetBolesti(){return bolest;}
-    vector<ZarazenOrgan> GetZO(){return zo;}
+    polCoveka getPol()const{return pol;}
+    StanjeCoveka getStanje()const{return stanje;}
+    int GetBrojBolesti()const{return(int) bolest.size();}
+    vector<Bolest> GetBolesti()const{return bolest;}
+    vector<ZarazenOrgan> GetZO()const{return zo;}
+   
 
 };
 

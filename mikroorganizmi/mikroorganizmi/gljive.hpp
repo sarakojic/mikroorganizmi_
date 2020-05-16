@@ -8,6 +8,7 @@
 
 #ifndef gljive_h
 #define gljive_h
+#include "mikroorganizam.hpp"
 enum vrstaGljive{plesni, pecurke, kvasci};
 class Gljiva:public Mikroorganizam{
 protected:

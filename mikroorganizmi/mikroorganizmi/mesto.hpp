@@ -10,6 +10,7 @@
 #define mesto_h
 #include "zivotinja.hpp"
 #include "covek.hpp"
+
 class Mesto{
 protected:
     string naziv;
@@ -34,8 +35,29 @@ public:
     virtual void dodajCoveka(const Covek & c){ljudi.push_back(c);}
     string getNaziv(){return naziv;}
     virtual int TipMesta(){return 0;}
-    int GetBrojLjudi(){return (int)ljudi.size();}
+    unsigned long int GetBrojLjudi(){return ljudi.size();}
     vector<Covek> getLjudi(){return ljudi;}
+    virtual void izadji(const Covek & c)
+    {
+        cout<<c.getIme()<<" "<< c.getPrezime()<<" je izas";
+        if (c.getPol()==zenski)
+        {
+            cout<<"la";
+        }
+        else
+        {
+            cout<<"ao";
+        }
+        cout<<" iz "<<naziv;
+        for (auto i = ljudi.begin(); i!= ljudi.end(); i ++)
+        {
+            if (c.getIme()==(i)->getIme()&&c.getPrezime()==(i)->getPrezime())
+            {
+                ljudi.erase(i);
+            }
+        }
+
+    }
 
     
 };

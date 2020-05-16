@@ -9,7 +9,7 @@
 #ifndef organ_h
 #define organ_h
 #include <iostream>
-using namespace std;
+
 enum stanjeOrgana{zdrav,zarazen};
 class Organ
 {

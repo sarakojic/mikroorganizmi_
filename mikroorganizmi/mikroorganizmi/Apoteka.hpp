@@ -11,7 +11,7 @@
 #include"mesto.hpp"
 #include"lek.hpp"
 #include"funkcije.h"
-using namespace std;
+
 class Apoteka: public Mesto
 {
 protected:
@@ -59,8 +59,12 @@ public:
             
         }
     }
-    void dodajCoveka(const Covek & c){ljudi.push_back(c);}
-    int TipMesta(){return 2;}
+
+    
+    void dodajCoveka(const Covek & c){Mesto::dodajCoveka(c);}
+    void izadji(const Covek & c){Mesto::izadji(c);cout<<" apoteka"<<endl;}
+    
+  
 
 };
 

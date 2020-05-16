@@ -9,7 +9,7 @@
 #ifndef PotencijalniPrenosnik_h
 #define PotencijalniPrenosnik_h
 #include "parazit.hpp"
-using namespace std;
+
 class Potpren{
 protected:
     string naziv;

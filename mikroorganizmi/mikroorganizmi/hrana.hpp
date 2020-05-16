@@ -8,7 +8,7 @@
 
 #ifndef hrana_h
 #define hrana_h
-using namespace std;
+
 class Hrana
 {
 protected:

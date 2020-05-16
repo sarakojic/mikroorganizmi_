@@ -12,7 +12,7 @@
 
 #include "mikroorganizam.hpp"
 
-using namespace std;
+
 
 enum TipBolesti{bakterijska, virusna, parazitska};
 
