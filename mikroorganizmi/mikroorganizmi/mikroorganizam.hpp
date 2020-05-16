@@ -8,6 +8,9 @@
 
 #ifndef mikroorganizam_h
 #define mikroorganizam_h
+#include <iostream>
+using namespace std;
+#include "organ.hpp"
 using namespace std;
 class Mikroorganizam
 {
@@ -22,10 +25,18 @@ public:
     Mikroorganizam(const Mikroorganizam & m){naziv=m.naziv;brojM++;}
     string getNaziv(){return naziv;}
     static int getBroj(){return brojM;}
+
     friend ostream& operator<<(ostream& izlaz, const Mikroorganizam& m);
     ~Mikroorganizam(){
            brojM--;
        }
+    virtual void ZaraziOrgan(  Organ & org)
+    {
+        org.setStanje(zarazen);
+        cout<<naziv<<" je zarazio "<< org.getIme()<<endl;
+    }
+    
+    
     
 };
 ostream& operator<<(ostream& izlaz, const Mikroorganizam& m){

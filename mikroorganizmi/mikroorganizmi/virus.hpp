@@ -17,6 +17,11 @@ public:
     Virus() :Mikroorganizam(){}
     Virus(string n ): Mikroorganizam(n){}
     Virus(const Virus & v):Mikroorganizam(v.naziv){}
+    void ZaraziOrgan(  Organ & org)
+          {
+              cout<<"Virus ";
+              Mikroorganizam::ZaraziOrgan(org);
+          }
  
     
 };

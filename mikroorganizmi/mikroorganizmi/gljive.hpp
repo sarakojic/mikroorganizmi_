@@ -8,10 +8,33 @@
 
 #ifndef gljive_h
 #define gljive_h
-class Gljive
-{
+enum vrstaGljive{plesni, pecurke, kvasci};
+class Gljiva:public Mikroorganizam{
 protected:
+    vrstaGljive vrsta;
 public:
+    Gljiva() :Mikroorganizam(), vrsta(plesni){}
+    Gljiva(string n, vrstaGljive v) :Mikroorganizam(n), vrsta(v){}
+    Gljiva(const Gljiva & g ) :Mikroorganizam(g.naziv), vrsta(g.vrsta){}
+    void ZaraziOrgan(  Organ & org)
+          {
+              cout<<"Gljiva koja je ";
+              if(vrsta==0)
+              {
+                  cout<<"plesan";
+              }
+              if(vrsta==1)
+              {
+                  cout<<"pecurka";
+              }
+              if(vrsta==2)
+              {
+                  cout<<"kvasac";
+              }
+              cout<<" i zove se ";
+              Mikroorganizam::ZaraziOrgan(org);
+          }
+    
     
 };
 

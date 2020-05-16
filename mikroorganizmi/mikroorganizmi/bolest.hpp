@@ -9,8 +9,9 @@
 #ifndef bolest_h
 #define bolest_h
 #include <iostream>
-#include "organ.hpp"
+
 #include "mikroorganizam.hpp"
+
 using namespace std;
 
 enum TipBolesti{bakterijska, virusna, parazitska};
@@ -18,34 +19,46 @@ enum TipBolesti{bakterijska, virusna, parazitska};
 class Bolest{
 protected:
     string naziv;
-    Organ NapadaOrgan;
     int NivoNapadanja;
     TipBolesti tip;
-    vector<Mikroorganizam> izaziva;
+    vector<Mikroorganizam*> izaziva;
     
 public:
-    Bolest():naziv(" "), NapadaOrgan(),NivoNapadanja(0), tip(virusna){izaziva.push_back(Mikroorganizam());}
+    void dodajM(Mikroorganizam* m){izaziva.push_back(m);}
+    Bolest():naziv(" "),NivoNapadanja(0), tip(virusna){}
     
-    Bolest(string n,const Organ& no,int  nn,TipBolesti t ,const Mikroorganizam & m):
-    naziv(n), NapadaOrgan(no), NivoNapadanja(nn), tip(t)
+    Bolest(string n,int  nn,TipBolesti t , Mikroorganizam * m):
+    naziv(n),  NivoNapadanja(nn), tip(t)
     {
-        izaziva.push_back(Mikroorganizam(m));
+        dodajM(m);
     }
+    Bolest(string n,int  nn,TipBolesti t ,vector< Mikroorganizam*>  m):
+       naziv(n),  NivoNapadanja(nn), tip(t)
+       {
+           for (auto i=*m.begin(); i != *m.end(); i ++)
+              {
+                  dodajM(i);
+                  
+              }
+       }
     Bolest(const Bolest &b)
        {
            naziv=b.naziv;
-           NapadaOrgan=b.NapadaOrgan;
            tip=b.tip;
            izaziva=b.izaziva;
        }
 
     string getNaziv(){return naziv;}
-    Organ getOrgan(){return NapadaOrgan;}
+  
     int getNN(){return NivoNapadanja;}
     TipBolesti getTB(){return tip;}
-    vector< Mikroorganizam>getMikroorganizam(){return izaziva;}
+    vector< Mikroorganizam*>getMikroorganizam(){return izaziva;}
+    void setNN(int x){NivoNapadanja=x;}
+    
 
 };
 
 
+
 #endif /* bolest_h */
+

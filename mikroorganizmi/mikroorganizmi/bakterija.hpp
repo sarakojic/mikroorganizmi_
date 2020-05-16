@@ -12,31 +12,52 @@
 enum OblikBakterije{koka, bacil, spiril};
 class Bakterija:public Mikroorganizam{
 protected:
-    OblikBakterije bakterija;
+    OblikBakterije oblik;
 
 public:
-    Bakterija() :Mikroorganizam(), bakterija(koka){}
-     Bakterija(string n, OblikBakterije o ): Mikroorganizam(n), bakterija(o){}
-     Bakterija(const Bakterija & b):Mikroorganizam(b.naziv), bakterija(b.bakterija){}
+    Bakterija() :Mikroorganizam(), oblik(koka){}
+    Bakterija(string n, OblikBakterije o ): Mikroorganizam(n), oblik(o){}
+    Bakterija(const Bakterija & b):Mikroorganizam(b.naziv), oblik(b.oblik){}
+    
+    void ZaraziOrgan(  Organ & org)
+       {
+           cout<<"Bakterija koja je ";
+           if(oblik==0)
+           {
+               cout<<"koka";
+           }
+           if(oblik==1)
+           {
+               cout<<"bacil";
+           }
+           if(oblik==2)
+           {
+               cout<<"spiril";
+           }
+           cout<<" i zove se ";
+           Mikroorganizam::ZaraziOrgan(org);
+       }
+    
      friend ostream& operator<<(ostream& izlaz, const Bakterija& b){
          izlaz<<"Bakterija- ispis"<<endl;
          izlaz<<"Naziv: "<<b.naziv<<endl;
          izlaz<<"Oblik Bakterije: ";
-         if(b.bakterija==0)
+         if(b.oblik==0)
           {
               izlaz<<"koka"<<endl;
           }
-          if(b.bakterija==1)
+          if(b.oblik==1)
           {
               izlaz<<"bacil"<<endl;
           }
-          if(b.bakterija==2)
+          if(b.oblik==2)
           {
               izlaz<<"spiril"<<endl;
           }
          izlaz<<endl;
      return izlaz;
      }
+    
 };
 
 #endif /* bakterija_h */

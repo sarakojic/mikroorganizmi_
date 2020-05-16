@@ -9,6 +9,9 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <unistd.h>
+#include <time.h>
+#include <stdlib.h>
 #include "PotencijalniPrenosnik.hpp"
 #include "hrana.hpp"
 #include "bakterija.hpp"
@@ -22,9 +25,52 @@
 #include "zivotinja.hpp"
 #include "lek.hpp"
 #include "mesto.hpp"
+#include "ZarazenOrgan.hpp"
+#include "Restoran.hpp"
+#include "Apoteka.hpp"
 
 using namespace std;
 int Mikroorganizam::brojM=0;
+void idiNegde( Mesto  & m, Covek & c)
+{
+    m.dodajCoveka(c);
+    cout<<c.getIme()<<" "<<c.getPrezime()<<" ide u "<<m.getNaziv()<<endl;
+    usleep(4500000);
+    if (m.GetBrojLjudi()>=2)
+    {
+    srand((unsigned int) time(NULL));
+    bool DaLiCeSeZaraziti=rand()%2;
+  if (DaLiCeSeZaraziti==0)
+    {
+        cout<<c.getIme()<<" "<<c.getPrezime()<<" nije zarazen";
+        if (c.getPol()==zenski){cout<<"a";}
+        usleep(4500000);
+        cout<<endl;
+        return;
+        
+    }
+    
+    int cimeBiSeZarazio=rand()%((unsigned int)m.GetBrojLjudi());
+    Covek c2;
+    c2=( m.getLjudi())[cimeBiSeZarazio];
+    if (c2.getStanje()==zdrav_covek)
+    {
+        cout<<c.getIme()<<" "<<c.getPrezime()<<" nije zarazen";
+               if (c.getPol()==zenski){cout<<"a";}
+               cout<<endl;
+               return;
+        
+    }
+    int x=rand()%c2.GetBrojBolesti();
+    Bolest b2= (c2.GetBolesti())[x];
+    c.Zarazi(b2,(c2.GetZO())[x] );
+    
+    }
+   
+    
+   
+    
+}
 
   void pisiTxt(string nazivFajla, string tekst, char mode='w')
   {
@@ -66,8 +112,11 @@ int Mikroorganizam::brojM=0;
            cout << "Neuspesno otvoren fajl";
    
    }
+
   
 int main(int argc, const char * argv[]) {
+    
+    
    //METODE SU URADJENE U KLASI COVEK
   // Program sluzi za pracenje infekcija, lecenje, ozdravljenja, smrtnost i uticaja zivih organizama (mikroorganizama, zivotinja i drugih ljudi) na zdravstveno stanje ljudske populacije.
   //  Program  ce sadrzati file (bazu podataka) kao neku vrstu enciklopedije  koji ce cuvati podatke o tome koju bolest leci koji "lek". Kojoj se moze pristupiti tokom pokretanja programa, file koji cuva sva "desavanja" u programu dakle sva stanja ljudi i njihove interakcije.
@@ -81,31 +130,42 @@ int main(int argc, const char * argv[]) {
     Malarija|Crvena Krvna zrnca|zarazen|80|parazitska|Plasmodium|sporozoa
     Tetanus|Nervni sistem|zarazen|85|bakterijska|Clostridium Tetani|bacil
     Salmonela|Zeludačno-crevni trakt|zarazen|15|bakterijska|Enterobakteriaceae|bacil*/
-    cout<<Mikroorganizam::getBroj()<<endl;
+    ZarazenOrgan zo1,zo2,zo3;
     Parazit p1("Plasmodium",sporozoa),p2;
-    cout<<p1.getBroj()<<endl;
     Bakterija b1, b2("Clostridium Tetani",bacil), b3("Enterobakteriaceae",bacil);
-    cout<<p1.getBroj()<<endl;
+
     Virus v1, v2, v3;
-    cout<<p1.getBroj()<<endl;
+
     Organ o1("Crvena Krvna zrnca", zarazen), o2("Nervni sistem", zarazen), o3("Zeludacno-crevni trakt",zarazen);
-    Bolest blst1("Malarija",o1,80, parazitska, p1), blst2("Tetanus",o2, 85,bakterijska,b2 ), blst3("Salmonela", o3, 15, bakterijska,b3);
-
-    Covek c1, c2, c3;
+    Bolest blst1("Malarija",80, parazitska, &p1), blst2("Tetanus", 85,bakterijska,&b2 ), blst3("Salmonela", 15, bakterijska,&b3);
   
-    Zivotinja z1, z2, z3;
-    Lek l1, l2, l3;
-    Mesto ms1, ms2, ms3;
-    
-  // string BolestiFajl = "bolest.txt";
-  /* string ulaz;
-    getline(cin,ulaz);
+    Covek c1(100, "A","B",zdrav_covek,30,zenski,20000), c2(100, "C","D",zdrav_covek,35,muski,20000);
+    c2.Zarazi(blst3, o3);
+    c2.Zarazi(blst1, o1);
 
-  pisiTxt(BolestiFajl, ulaz);*/
+  
+
+    Hrana h1("pica",1,false,200),h2("salata", 3, false, 300), h3 ("sladoled",1, false, 100);
     
+    Restoran r1("Restooran",20.6);
+    Apoteka a1("AApoteka", 10.2);
+    Lek lek1(pilula,"2901", 5, blst3, 1000),lek2(vakcina," protiv Tetanus", 20, blst2, 2000);
+    a1.DodajLek(lek1);
+    a1.DodajLek(lek2);
+    c2.Izleci(a1.KupiLek());
+
+    r1.dodajHranu(h1);
+    r1.dodajHranu(h2);
+    r1.dodajHranu(h3);
+    idiNegde(r1, c2);
+    idiNegde(r1, c1);
+    c1.pojedi(r1.Naruci());
+    cout<<c1.getStanje()<<endl;
+
     
-   citajTxt("bolest.txt");
-    cout<<p1<<b2<<b3<<o1<<o2;
+
+    
+  
 
 
     

@@ -16,28 +16,34 @@ protected:
     string naziv;
     int NivoDelotvornosti;
     Bolest BolestKojuLeci;
+    int cena;
 public:
-    Lek(): tip(pilula), naziv(" "), NivoDelotvornosti(0),BolestKojuLeci(){}
-    Lek(TipLeka t, string n, int nd,const Bolest &b): tip(t), naziv(n), NivoDelotvornosti(nd),BolestKojuLeci(b){}
+    Lek(): tip(pilula), naziv(" "), NivoDelotvornosti(0),BolestKojuLeci(), cena(0){}
+    Lek(TipLeka t, string n, int nd,const Bolest &b, int c): tip(t), naziv(n), NivoDelotvornosti(nd),BolestKojuLeci(b), cena(c){}
 Lek(const Lek& l
-){tip=l.tip;naziv=l.naziv;NivoDelotvornosti=l.NivoDelotvornosti;BolestKojuLeci=l.BolestKojuLeci;}
+    ){tip=l.tip;naziv=l.naziv;NivoDelotvornosti=l.NivoDelotvornosti;BolestKojuLeci=l.BolestKojuLeci;cena=l.cena;}
     
-    TipLeka getTip()
+    TipLeka getTip() const
     {
         return tip;
     }
-    Bolest getBolest()
+    Bolest getBolest() const
     {
         return BolestKojuLeci;
     }
-    string getNaziv()
+    string getNaziv()const
     {
         return naziv;
     }
-    int getND()
+    int getND()const
     {
         return NivoDelotvornosti;
     }
+    int getCena() const
+    {
+        return cena;
+    }
+   
 
 
     

@@ -10,27 +10,27 @@
 #define organ_h
 #include <iostream>
 using namespace std;
-enum stanje{zdrav, zarazen};
+enum stanjeOrgana{zdrav,zarazen};
 class Organ
 {
 protected:
     string ime;
-    stanje StanjeOrgana;
+    stanjeOrgana stanje;
     
 public:
-    Organ(string i=" ", stanje s= zdrav){ime=i;StanjeOrgana=s;}
-    Organ(const Organ& o){ime=o.ime; StanjeOrgana=o.StanjeOrgana;}
+    Organ(string i=" ", stanjeOrgana s= zdrav){ime=i;stanje=s;}
+    Organ(const Organ& o){ime=o.ime; stanje=o.stanje;}
     string getIme(){return ime;}
-    stanje getStanje(){return StanjeOrgana;}
+    stanjeOrgana getStanje(){return stanje;}
     friend ostream& operator<<(ostream& izlaz, const Organ& o){
         izlaz<<"Organ- ispis"<<endl;
         izlaz<<"Ime: "<<o.ime<<endl;
         izlaz<<"Stanje organa: ";
-        if(o.StanjeOrgana==0)
+        if(o.stanje==0)
          {
              izlaz<<"zdrav"<<endl;
          }
-         if(o.StanjeOrgana==1)
+         if(o.stanje==1)
          {
              izlaz<<"zarazen"<<endl;
          }
@@ -38,6 +38,10 @@ public:
      
       
     return izlaz;
+    }
+    void setStanje( stanjeOrgana st)
+    {
+        stanje = st;
     }
 
 };

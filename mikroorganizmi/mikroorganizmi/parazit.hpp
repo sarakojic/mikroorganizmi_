@@ -12,32 +12,33 @@
 enum vrsteParazita{ameba, bicar, trepljar, sporozoa};
 class Parazit:public Mikroorganizam{
 protected:
-    vrsteParazita tipParazita;
+    vrsteParazita vrsta;
 public:
-    Parazit() :Mikroorganizam(), tipParazita(ameba){}
-    Parazit(string n, vrsteParazita p ): Mikroorganizam(n), tipParazita(p){}
-    Parazit(const Parazit & p):Mikroorganizam(p.naziv),tipParazita(p.tipParazita) {}
+    Parazit() :Mikroorganizam(), vrsta(ameba){}
+    Parazit(string n, vrsteParazita p ): Mikroorganizam(n), vrsta(p){}
+    Parazit(const Parazit & p):Mikroorganizam(p.naziv),vrsta(p.vrsta) {}
+    vrsteParazita getVrsta(){return vrsta;}
    friend ostream& operator<<(ostream& izlaz, const Parazit& p){
        izlaz<<"Parazit- ispis"<<endl;
        izlaz<<"Naziv: "<<p.naziv<<endl;
        izlaz<<"Vrsta parazita: ";
-       if(p.tipParazita==0)
+       if(p.vrsta==0)
        {
            izlaz<<"ameba"<<endl;
        }
-       if(p.tipParazita==1)
+       if(p.vrsta==1)
        {
            izlaz<<"bicar"<<endl;
        }
-       if(p.tipParazita==2)
+       if(p.vrsta==2)
        {
            izlaz<<"trepljar"<<endl;
        }
-       if(p.tipParazita==2)
+       if(p.vrsta==2)
        {
            izlaz<<"trepljar"<<endl;
        }
-       if(p.tipParazita==3)
+       if(p.vrsta==3)
        {
            izlaz<<"sporozoa"<<endl;
        }
@@ -46,6 +47,32 @@ public:
      
    return izlaz;
    }
+    void ZaraziOrgan(  Organ & org)
+    {
+        cout<<"Parazit koji je ";
+        if(vrsta==0)
+        {
+            cout<<"ameba";
+        }
+        if(vrsta==1)
+        {
+            cout<<"bicar";
+        }
+        if(vrsta==2)
+        {
+            cout<<"trepljar";
+        }
+        if(vrsta==2)
+        {
+            cout<<"trepljar";
+        }
+        if(vrsta==3)
+        {
+            cout<<"sporozoa";
+        }
+        cout<<" i zove se ";
+        Mikroorganizam::ZaraziOrgan(org);
+    }
 };
 
 #endif /* parazit_h */

@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ACC578A3-9554-495F-8ED3-3F4C54D5A0A5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mikroorganizmi/bolest.hpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "Bolest"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "D31E787F-73D5-4F2B-9E8C-BC228BBB47ED"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -78,8 +62,8 @@
             filePath = "mikroorganizmi/bolest.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "Bolest"
             landmarkType = "3">
          </BreakpointContent>
@@ -94,8 +78,8 @@
             filePath = "mikroorganizmi/bolest.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "Bolest"
             landmarkType = "3">
          </BreakpointContent>
@@ -110,9 +94,9 @@
             filePath = "mikroorganizmi/bolest.hpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "Bolest(n, no, nn, t, m)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "Bolest(n, nn, t, m)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

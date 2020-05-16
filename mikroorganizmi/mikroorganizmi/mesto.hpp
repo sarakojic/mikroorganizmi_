@@ -14,13 +14,28 @@ class Mesto{
 protected:
     string naziv;
     double povrsina;
-    vector<Zivotinja> zivotinje;
     vector<Covek> ljudi;
-    double gustina;
- 
+
 public:
-    Mesto(){naziv=" "; povrsina=0; zivotinje.push_back(Zivotinja());ljudi.push_back(Covek());}
-    Mesto(const Mesto &m){naziv=m.naziv; povrsina=m.povrsina; zivotinje=m.zivotinje; ljudi=m.ljudi; gustina=m.gustina;}
+    Mesto(){naziv=" "; povrsina=0;ljudi.push_back(Covek());}
+    Mesto(string n,double p, vector<Covek> c){
+        naziv= n;
+        povrsina=p;
+        for(auto i=c.begin();i!=c.end();i++)
+        ljudi.push_back(*i);
+    }
+    Mesto(string n, double p){naziv=n; povrsina=p;}
+    
+    Mesto(const Mesto &m){naziv=m.naziv; povrsina=m.povrsina; ljudi=m.ljudi;}
+    double GustinaMesta()
+    {
+        return (ljudi.size()/povrsina);
+    }
+    virtual void dodajCoveka(const Covek & c){ljudi.push_back(c);}
+    string getNaziv(){return naziv;}
+    virtual int TipMesta(){return 0;}
+    int GetBrojLjudi(){return (int)ljudi.size();}
+    vector<Covek> getLjudi(){return ljudi;}
 
     
 };

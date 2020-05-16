@@ -14,13 +14,14 @@ class Zivotinja
 {
 protected:
     string ime;
+    string vrsta;
     bool slobodna;
     Covek vlasnik;
 public:
-    Zivotinja():ime(" "), slobodna(true), vlasnik(){}
-    Zivotinja(string i, bool s,const Covek &v):ime(i), slobodna(s),
-    vlasnik(v){}
-    Zivotinja(const Zivotinja &z){ime=z.ime; slobodna=z.slobodna; vlasnik=z.vlasnik;}
+    Zivotinja():ime(" "), slobodna(true), vlasnik(), vrsta(" "){}
+    Zivotinja(string i,string v, bool s,const Covek &c):ime(i), vrsta(v) ,slobodna(s),
+    vlasnik(c){}
+    Zivotinja(const Zivotinja &z){ime=z.ime; slobodna=z.slobodna; vlasnik=z.vlasnik; vrsta= z.vrsta;}
 
     
 };

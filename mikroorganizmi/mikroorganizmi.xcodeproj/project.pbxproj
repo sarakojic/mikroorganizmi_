@@ -39,6 +39,10 @@
 		5614F3052454789A006C5D00 /* mikroorganizam.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mikroorganizam.hpp; sourceTree = "<group>"; };
 		5642AE202450A14300439A1C /* organ.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = organ.hpp; sourceTree = "<group>"; };
 		564E5E7124618F8900FDF45F /* bolest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bolest.txt; path = ../../mikroorganizmi/bolest.txt; sourceTree = "<group>"; };
+		56B7FBDD246E8F55000BFD0E /* ZarazenOrgan.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ZarazenOrgan.hpp; sourceTree = "<group>"; };
+		56B7FBDE246E9D61000BFD0E /* Restoran.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Restoran.hpp; sourceTree = "<group>"; };
+		56B7FBF2246EB1E7000BFD0E /* Apoteka.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Apoteka.hpp; sourceTree = "<group>"; };
+		56B7FBF3246EEB3D000BFD0E /* funkcije.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = funkcije.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				560B8EE3245078D900F6A88A /* main.cpp */,
+				56B7FBF3246EEB3D000BFD0E /* funkcije.h */,
 				560B8EF224507A0900F6A88A /* PotencijalniPrenosnik.hpp */,
 				560B8EF424507D0E00F6A88A /* hrana.hpp */,
 				560B8EEB2450795500F6A88A /* bakterija.hpp */,
@@ -81,11 +86,14 @@
 				560B8EEE2450799400F6A88A /* parazit.hpp */,
 				5614F3052454789A006C5D00 /* mikroorganizam.hpp */,
 				5642AE202450A14300439A1C /* organ.hpp */,
+				56B7FBDD246E8F55000BFD0E /* ZarazenOrgan.hpp */,
 				560B8EEA2450792700F6A88A /* covek.hpp */,
 				560B8EED2450797B00F6A88A /* gljive.hpp */,
 				560B8EF324507A6F00F6A88A /* zivotinja.hpp */,
 				560B8EF0245079B700F6A88A /* lek.hpp */,
 				560B8EF524507E5C00F6A88A /* mesto.hpp */,
+				56B7FBDE246E9D61000BFD0E /* Restoran.hpp */,
+				56B7FBF2246EB1E7000BFD0E /* Apoteka.hpp */,
 			);
 			path = mikroorganizmi;
 			sourceTree = "<group>";
