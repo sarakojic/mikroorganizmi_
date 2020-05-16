@@ -126,7 +126,7 @@ int main(int argc, const char * argv[]) {
     Virus v1, v2, v3;
 
     Organ o1("Crvena Krvna zrnca", zarazen), o2("Nervni sistem", zarazen), o3("Zeludacno-crevni trakt",zarazen);
-    Bolest blst1("Malarija",80, parazitska, &p1), blst2("Tetanus", 85,bakterijska,&b2 ), blst3("Salmonela", 15, bakterijska,&b3);
+    Bolest blst1("Malarija",80, parazitska, &p1), blst2("Tetanus", 85,bakterijska,&b2 ), blst3("Salmonela", 10, bakterijska,&b3);
   
     Covek c1(100, "A","B",zdrav_covek,30,zenski,20000), c2(100, "C","D",zdrav_covek,35,muski,20000),c3(100, "E","F",zdrav_covek,20,drugo,20000);
    c2.Zarazi(blst3, o3);
@@ -149,11 +149,11 @@ int main(int argc, const char * argv[]) {
     r1.dodajHranu(h3);
     idiNegde(r1, c2);
     idiNegde(r1, c3);
+    r1.izadji(c2);
     idiNegde(r1, c1);
     
-    
     c1.pojedi(r1.Naruci());
-
+  
 
     
 

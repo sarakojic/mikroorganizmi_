@@ -53,6 +53,7 @@ public:
     
             if ((*i).getNaziv()==NazivLeka)
             {
+               cout<<NazivLeka<<" ce biti uklonjen sa jelovnika"<<endl;
                lekovi.erase(i);
                 
             }

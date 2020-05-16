@@ -53,7 +53,17 @@ public:
     void dodajCoveka(const Covek & c){Mesto::dodajCoveka(c);}
     void izadji(const Covek & c){Mesto::izadji(c);cout<<" restoran"<<endl;}
  
-    
+    void IzbaciJelo(string naziv)
+    {
+        for (auto i= jelovnik.begin(); i != jelovnik.end(); i ++)
+        {
+            if ((*i).getIme()==naziv)
+            {
+                cout<<naziv<<" ce biti uklonjen sa jelovnika"<<endl;
+                jelovnik.erase(i);
+            }
+        }
+    }
     
 };
 
