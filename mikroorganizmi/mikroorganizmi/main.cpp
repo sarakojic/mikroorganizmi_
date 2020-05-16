@@ -153,7 +153,7 @@ int main(int argc, const char * argv[]) {
     
     
     c1.pojedi(r1.Naruci());
-    cout<<c1.getStanje()<<endl;
+
 
     
 
