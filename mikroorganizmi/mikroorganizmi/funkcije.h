@@ -103,6 +103,26 @@ void pisiTxt(string nazivFajla, string tekst, char mode='a')
          cout << "Neuspesno otvoren fajl";
 
  }
+string FileString(string nazivFajla)
+{
+    string s;
+    string linija;
+    ifstream fajl (nazivFajla);
+    if (fajl.is_open())
+    {
+        while ( getline (fajl,linija) )
+        {
+            s.append(linija+'\n');
+        }
+        fajl.close();
+    }
+
+    else
+        cout << "Neuspesno otvoren fajl";
+    return s;
+
+    
+}
 
 void UpisiLjudeUFajl(vector<string> v)
 {

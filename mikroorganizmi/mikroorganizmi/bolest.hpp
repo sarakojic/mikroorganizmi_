@@ -59,7 +59,11 @@ public:
         return naziv;
     }
 
-    int getNN()
+    void setNN(int x)
+    {
+        NivoNapadanja=x;
+    }
+    int getNN()const
     {
         return NivoNapadanja;
     }
@@ -71,10 +75,7 @@ public:
     {
         return izaziva;
     }
-    void setNN(int x)
-    {
-        NivoNapadanja=x;
-    }
+
 
     friend ostream& operator<<(ostream& izlaz, const Bolest& b)
     {

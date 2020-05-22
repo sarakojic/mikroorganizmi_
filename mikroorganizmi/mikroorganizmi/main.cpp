@@ -42,6 +42,10 @@ int Mikroorganizam::brojM=0;
 void idiNegde( Mesto  & m, Covek & c)
 {
     m.dodajCoveka(c);
+    pisiTxt("Izvestaj.txt",c.getIme()+" ");
+    pisiTxt("Izvestaj.txt",c.getPrezime()+" ");
+    pisiTxt("Izvestaj.txt"," ide u "+m.getNaziv()+"\n");
+    
     cout<<c.getIme()<<" "<<c.getPrezime()<<" ide u "<<m.getNaziv()<<endl;
     usleep(5000);
     int DaLiCeSeZaraziti= rand()%((int)floor(m.GustinaMesta())+1);//dodajem 1 da se ne bi moglo desiti deljenje sa 0
@@ -56,7 +60,6 @@ void idiNegde( Mesto  & m, Covek & c)
 
     int cimeBiSeZarazio=rand()%(m.GetBrojLjudi()-1);//jer je novi covek koji je  dodat poslednji pa njega ne racunam
     Covek c2;
-    cout<<cimeBiSeZarazio<<endl;
     c2=m.getLjudi()[cimeBiSeZarazio];
     if (c2.getStanje()==zdrav_covek)
     {
@@ -66,12 +69,25 @@ void idiNegde( Mesto  & m, Covek & c)
                return;
 
     }
+    if(c2.GetBrojBolesti()==0)
+    {
+        return;
+    }
     int x=rand()%c2.GetBrojBolesti();
     Bolest b2= (c2.GetBolesti())[x];
     c.Zarazi(b2,(c2.GetZO()[x]) );
 
 
 
+}
+void NapravljenCovekTxt(const Covek &c)
+{
+    pisiTxt("Izvestaj.txt", "Napravljen novi covek\n");
+    
+    ofstream file;
+    file.open ("Izvestaj.txt", ios_base::app);
+    file << c;
+    file.close();
 }
 
 
@@ -95,11 +111,11 @@ Covek NapraviCoveka()
     cout<<"Unesite godine:"<<endl;
     cin>>godine;
     pisiTxt("Ljudi.txt", to_string(godine)+"|",'a');
-    if (pol=="musko"||pol=="Musko"||pol=="MUSKO"||pol=="muski"||pol=="Muski"||pol=="MUSKI")
+    if (pol=="musko"||pol=="zenski")
     {
         PraviPol=muski;
     }
-    if (pol=="zensko"||pol=="Zensko"||pol=="ZENSKO"||pol=="zenski"||pol=="Zenski"||pol=="ZENSKI")
+    else if (pol=="zensko"||pol=="zenski")
     {
         PraviPol=zenski;
     }
@@ -108,16 +124,18 @@ Covek NapraviCoveka()
         PraviPol=drugo;
     }
     pisiTxt("Ljudi.txt", pol+"|",'a');
-    pisiTxt("Ljudi.txt","20000|",'a');
+    pisiTxt("Ljudi.txt","20000",'a');
     Covek c(100,ime,prezime,zdrav_covek,godine,PraviPol,20000);
     clearscr();
     cout<<"Napravljen je novi Covek"<<endl;
     cout<<"Za pocetak mu je dodeljeno 20 000"<<endl;
     cout<<"Ovaj covek je zdrav sa 100/100 imunitetom"<<endl;
     cout<<c;
+    NapravljenCovekTxt(c);
     return c;
     
 }
+
 void IspisiLjude()
 {
     vector<string>ljudi=splitFile("Ljudi.txt");
@@ -146,6 +164,14 @@ void meni()
     cout<<"1. Izaberi jednog od vec postojecih ljudi"<<endl;
     cout<<"2. Napravite novog coveka za simulaciju"<<endl;
     cout<<"3. Izadjite iz programa"<<endl;
+}
+void Enciklopedija()
+{
+    vector<string> v=splitFile("Enciklopedija.txt");
+    for(int i = 0 ; i <v.size(); i +=2)
+    {
+        cout<<v[i]<<" leci "<<v[i+1]<<endl;
+    }
 }
 StanjeCoveka to_StanjeCoveka(string s)
 {
@@ -182,6 +208,7 @@ void meni2()
     usleep(5000);
     cout<<"/////////////////Dobro dosli u Mikroorganis////////////////"<<endl;
     usleep(5000);
+    cout<<"Da pogledate enciklopediju lekova pritisnite  0"<<endl;
     cout<<"Kako biste otisli u nas cuveni restoran sa hranom ciji ukus morate osetiti pritisnite taster 1"<<endl;
     cout<<"Ukoliko biste ipak otisli u setnju kroz park obraslim zelenilom pritisnite taster 2"<<endl;
     cout<<"Mozete i otici u apoteku ako se ne osecate dobro i pritisnite taster 3"<<endl;
@@ -222,6 +249,9 @@ Covek izaberiCoveka()
         if(unos==imena[i]||unos==prezimena[i])
         {
             cout<<"Odabrali ste "<<imena[i]<<" "<<prezimena[i]<<endl;
+            pisiTxt("Izvestaj.txt","Odabran je covek: ");
+            pisiTxt("Izvestaj.txt",imena[i]+" ");
+            pisiTxt("Izvestaj.txt",prezimena[i]+'\n');
             return lj[i];
         }
         
@@ -238,10 +268,23 @@ Covek CovekIzFajla(int n)
     
 }
 
+void Pocetak()
+{
+    string s=FileString("BrojPokretanja.txt"),s2;
+    int BrojPok=stoi(s);
+    BrojPok++;
+    s2="POKRETANJE BROJ";
+    s2.append(to_string(BrojPok));
+    s2.append("--------------------\n");
+    pisiTxt("Izvestaj.txt",s2 );
+    pisiTxt("BrojPokretanja.txt", to_string(BrojPok),'w');
+    
+}
 int main(int argc, const char * argv[]) {
 
    srand((unsigned int)time(NULL));
-   vector<string> v=splitFile("Ljudi.txt");
+    Pocetak();
+    vector<string> v=splitFile("Ljudi.txt");
     Covek c;
     string x;
 
@@ -260,13 +303,18 @@ int main(int argc, const char * argv[]) {
     }
     if (x==to_string(3))
     {
-        return 1;
+        exit(1);
     }
         cout<<"Izaberite ponovo..."<<endl;
     clearscr();
 
     }while(x!= to_string(1)||x!=to_string(2)||x!=to_string(3));
-    
+    pisiTxt("TrenutniCovek.txt", c.getIme()+"|"+c.getPrezime(),'w');
+    if(c.getStanje()==mrtav)
+    {
+        cout<<"Vas covek je mrtav"<<endl;
+        exit(4);
+    }
     Parazit p1("Plasmodium",sporozoa);
     Bakterija b2("Clostridium Tetani",bacil), b3("Enterobakteriaceae",bacil);
     Organ o1("Crvena Krvna zrnca", zarazen), o2("Nervni sistem", zarazen), o3("Zeludacno-crevni trakt",zarazen);
@@ -274,13 +322,15 @@ int main(int argc, const char * argv[]) {
     Bolest blst1("Malarija",80,parazitska,&p1);
     Bolest blst2("Tetanus",85,bakterijska,&b2);
     Bolest blst3("Salmonela",15,bakterijska,&b3);
-    Restoran r("Restooran",20.6);
-    Apoteka a("AApoteka", 10.2);
-    Lek lek1(pilula,"2901", 5, blst3, 1000),lek2(vakcina," protiv Tetanus", 20, blst2, 2000);
+    Restoran r("Restoran",20.6);
+    Apoteka a("Apoteka", 10.2);
+    Lek lek1(pilula,"hydroxychloroquine", 50, blst1, 1600),lek2(vakcina,"Tenivac", 100, blst2, 4000);
+    Lek lek3(pilula,"ciprofloxacin",100,blst3,800);
     Mesto p("Park",52.43);
     
     a.DodajLek(lek1);
     a.DodajLek(lek2);
+    a.DodajLek(lek3);
     r.dodajHranu(h1);
     r.dodajHranu(h2);
     r.dodajHranu(h3);
@@ -290,7 +340,8 @@ int main(int argc, const char * argv[]) {
 
    if (c.getIme()==c1.getIme()&&c.getPrezime()==c1.getPrezime())
    {
-       c2.Zarazi(blst3, o3);
+       NapravljenCovekTxt(c2);
+       NapravljenCovekTxt(c3);
        c2.Zarazi(blst1, o1);
        c3.Zarazi(blst2, o2);
        idiNegde(r, c2);
@@ -299,16 +350,18 @@ int main(int argc, const char * argv[]) {
    }
    if (c.getIme()==c2.getIme()&&c.getPrezime()==c2.getPrezime())
    {
+       NapravljenCovekTxt(c3);
+       NapravljenCovekTxt(c1);
        c3.Zarazi(blst3, o3);
-       c3.Zarazi(blst1, o1);
        c1.Zarazi(blst2, o2);
        idiNegde(r, c1);
        idiNegde(p, c3);
        
    }
-   if (c.getIme()==c3.getIme()&&c.getPrezime()==c3.getPrezime())
+   else if (c.getIme()==c3.getIme()&&c.getPrezime()==c3.getPrezime())
    {
-       c1.Zarazi(blst3, o3);
+       NapravljenCovekTxt(c3);
+       NapravljenCovekTxt(c1);
        c1.Zarazi(blst1, o1);
        c2.Zarazi(blst2, o2);
        idiNegde(r, c1);
@@ -316,13 +369,15 @@ int main(int argc, const char * argv[]) {
    }
    else
     {
+        NapravljenCovekTxt(c3);
+        NapravljenCovekTxt(c1);
+        NapravljenCovekTxt(c2);
         c1.Zarazi(blst1, o1);
         c2.Zarazi(blst2, o2);
-        c3.Zarazi(blst3, o3);
         idiNegde(r, c1);
         idiNegde(p, c2);
         idiNegde(r, c3);
-        citajTxt("Ljudi.txt");
+
     }
 
     x="nesto";
@@ -332,10 +387,15 @@ int main(int argc, const char * argv[]) {
       citajTxt("Mapa.txt");
       meni2();
       cin>>x;
+        if (x==to_string(0))
+        {
+            clearscr();
+            Enciklopedija();
+            usleep(10000);
+        }
         if (x==to_string(1))
         {
             idiNegde(r, c);
-            sleep(2000);
             clearscr();
             string y;
             do
@@ -346,7 +406,6 @@ int main(int argc, const char * argv[]) {
                 if(y==to_string(1))
                 {
                     c.pojedi(r.Naruci());
-                    break;
                 }
                 if(y==to_string(0))
                 {
@@ -360,7 +419,7 @@ int main(int argc, const char * argv[]) {
         if (x==to_string(2))
         {
             idiNegde(p, c);
-            sleep(2000);
+            usleep(2000);
             clearscr();
             citajTxt("Drvo.txt");
             string z;
@@ -374,7 +433,7 @@ int main(int argc, const char * argv[]) {
         if (x==to_string(3))
         {
             idiNegde(a, c);
-            sleep(2000);
+            usleep(2000);
             clearscr();
             string p;
             do
@@ -385,7 +444,6 @@ int main(int argc, const char * argv[]) {
                 if(p==to_string(1))
                 {
                     c.Izleci(a.KupiLek());
-                    break;
                 }
                 if(p==to_string(0))
                 {
@@ -399,7 +457,7 @@ int main(int argc, const char * argv[]) {
         }
         
     }while(x!=to_string(4));
-    
+
 
    //c1.pojedi(r1.Naruci());
     

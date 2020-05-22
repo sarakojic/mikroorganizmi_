@@ -30,7 +30,7 @@ public:
     Mesto(const Mesto &m){naziv=m.naziv; povrsina=m.povrsina; ljudi=m.ljudi;}
     virtual double GustinaMesta()
     {
-        return (ljudi.size()/povrsina);
+        return (povrsina/ljudi.size());
     }
     virtual void dodajCoveka(const Covek & c){ljudi.push_back(c);}
     string getNaziv(){return naziv;}

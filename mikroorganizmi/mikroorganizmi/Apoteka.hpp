@@ -37,7 +37,7 @@ public:
         clearscr();
         cout<<"__Dobrodosli u apoteku__"<<endl;
         usleep(2000000);
-            cout<<"Izaberite lek: "<<endl;
+            cout<<"Izaberite broj leka: "<<endl;
             IspisiLekove();
             int lek;
             cin>>lek;

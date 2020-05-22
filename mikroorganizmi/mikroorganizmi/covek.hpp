@@ -24,21 +24,6 @@
 enum StanjeCoveka {zdrav_covek, bolestan, mrtav};
 enum polCoveka {muski, zenski,drugo};
 
-bool porediMikroorganizme(vector<Mikroorganizam*> m1, vector<Mikroorganizam*>m2)
-{
-    if (m1.size()!= m2.size())
-    {
-        return false;
-    }
-    for (int i = 0 ; i < m1.size(); i ++)
-    {
-        if ((m1[i])->getNaziv()!=m2[i]->getNaziv())
-        {
-            return false;
-        }
-    }
-    return true;
-}
 ZarazenOrgan ZaraziOrg(Organ & o,Bolest & b)
  {
 
@@ -116,6 +101,7 @@ public :
         zo.push_back(oo);
         stanje=bolestan;
         cout<<ime<<" "<<prezime<<" ima "<<b.getNaziv()<<endl;
+        pisiTxt("Izvestaj.txt",ime+" "+prezime+" ima "+b.getNaziv()+"\n");
         if (imunitet- b.getNN()>=MIN)
         {
             imunitet= imunitet- b.getNN();
@@ -123,7 +109,9 @@ public :
         else
         {
             stanje=mrtav;
+            imunitet=0;
             cout<<ime<<" "<<prezime<<" je nazalost"<<" preminu";
+            pisiTxt("Izvestaj.txt",ime+" "+prezime+" je mrtav\n");
             if (pol==zenski)
             {
                 cout<<"la";
@@ -138,6 +126,12 @@ public :
                 cout<<(*i).getNaziv()<<" ";
             }
             cout<<endl;
+            vector<string> tc=splitFile("TrenutniCovek.txt");
+            if(ime==tc[0]&&prezime==tc[1])
+            {
+                exit(3);
+            }
+            
 
 
         }
@@ -215,14 +209,16 @@ public :
             cout<<l.getNaziv()<<endl;
 
         }
-        int x=1;
+        int x=0;
         for (auto i = bolest.begin(); i!=bolest.end(); i ++)
         {
-            if((l.getBolest()).getNaziv()==(*i).getNaziv()&&(l.getBolest()).getNN()==(*i).getNN()&&(l.getBolest()).getTB()==(*i).getTB()&&porediMikroorganizme(l.getBolest().getMikroorganizam(),(*i).getMikroorganizam())==true)
+            if((*i).getNaziv()==l.getBolest().getNaziv())
+            
             {
                 if (imunitet+ l.getND()<=MAX)
                 {
                     imunitet+= l.getND();
+                    
                 }
                 else
                 {
@@ -272,6 +268,7 @@ public :
             {
                 cout<<"!!!!"<<endl;
             }
+            pisiTxt("Izvestaj.txt",ime+" "+prezime+" je izlecen\n ");
 
         }
           vector<string>v=splitFile("Ljudi.txt");
@@ -386,7 +383,8 @@ public :
     {
         return zo;
     }
-    friend ostream& operator<<(ostream& izlaz, const Covek& c){
+    friend ostream& operator<<(ostream& izlaz, const Covek& c)
+    {
     izlaz<<"Covek- ispis"<<endl;
     izlaz<<"Ime: "<<c.ime<<endl;
     izlaz<<"Prezime: "<<c.prezime<<endl;
