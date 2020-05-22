@@ -1830,3 +1830,56 @@ Loka Raini  ide u Park
 Fraut Treh  ide u Restoran
      ide u Apoteka
 POKRETANJE BROJ69--------------------
+POKRETANJE BROJ70--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Test
+Prezime: Test
+Godine: 10
+Pol: 10
+muski
+drugo
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Loka Raini ima Tetanus
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+Test Test  ide u Restoran
+POKRETANJE BROJ71--------------------
