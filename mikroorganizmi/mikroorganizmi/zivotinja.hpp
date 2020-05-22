@@ -6,6 +6,7 @@
 //  Copyright © 2020 Sara. All rights reserved.
 //
 
+
 #ifndef zivotinja_h
 #define zivotinja_h
 #include "covek.hpp"
@@ -18,10 +19,24 @@ protected:
     bool slobodna;
     Covek vlasnik;
 public:
-    Zivotinja():ime(" "), slobodna(true), vlasnik(), vrsta(" "){}
+    Zivotinja():ime(" "), slobodna(true), vlasnik(), vrsta(" ")
+    {
+        
+    }
     Zivotinja(string i,string v, bool s,const Covek &c):ime(i), vrsta(v) ,slobodna(s),
-    vlasnik(c){}
-    Zivotinja(const Zivotinja &z){ime=z.ime; slobodna=z.slobodna; vlasnik=z.vlasnik; vrsta= z.vrsta;}
+    vlasnik(c)
+    {
+        
+    }
+    Zivotinja(const Zivotinja &z)
+    {
+        ime=z.ime;
+        slobodna=z.slobodna;
+        vlasnik=z.vlasnik;
+        vrsta= z.vrsta;
+        
+    }
+    
 
     
 };

@@ -43,9 +43,32 @@ Lek(const Lek& l
     {
         return cena;
     }
+    friend ostream& operator<<(ostream& izlaz, const Lek& l)
+       {
+           izlaz<<"Lek - ispis"<<endl;
+           izlaz<<"naziv : "<<l.naziv<<endl;
+           izlaz<<"tip : ";
+           if (l.tip==0)
+           {
+            izlaz<<"pilula";
+           }
+           if (l.tip==1)
+           {
+            izlaz<<"vakcina";
+           }
+           if (l.tip==2)
+           {
+            izlaz<<"operacija";
+           }
+           izlaz<<endl;
+           izlaz<<"Nivo delotvornosti: "<<l.NivoDelotvornosti<<endl;
+           izlaz<<"Bolest koju leci: "<<l.BolestKojuLeci<<endl;
+           izlaz<<"Cena: "<<l.cena<<endl;
+           return izlaz;
    
+       }
 
 
     
-};  
+};
 #endif /* lek_h */

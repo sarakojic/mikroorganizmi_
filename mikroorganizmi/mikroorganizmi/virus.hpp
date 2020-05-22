@@ -5,7 +5,6 @@
 //  Created by Sara on 4/22/20.
 //  Copyright © 2020 Sara. All rights reserved.
 //
-
 #ifndef virus_h
 #define virus_h
 #include "mikroorganizam.hpp"
@@ -22,6 +21,12 @@ public:
               cout<<"Virus ";
               Mikroorganizam::ZaraziOrgan(org);
           }
+    friend ostream& operator<<(ostream& izlaz, const Virus& v)
+    {
+        izlaz<<"Virus - ispis"<<endl;
+        izlaz<<"Naziv: "<<v.naziv<<endl<<endl;
+        return izlaz;
+    }
  
     
 };

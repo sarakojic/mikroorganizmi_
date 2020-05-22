@@ -6,6 +6,7 @@
 //  Copyright © 2020 Sara. All rights reserved.
 //
 
+
 #ifndef hrana_h
 #define hrana_h
 
@@ -38,6 +39,24 @@ public:
     void setPojedena(bool p){pojedena=p;}
     bool getPojedena(){return pojedena;}
     int getCena(){return cena;}
+    friend ostream& operator<<(ostream& izlaz, const Hrana& h)
+        {
+            izlaz<<"Hrana- ispis"<<endl;
+            izlaz<<"Ime : "<<h.ime<<endl;
+            izlaz<<"Nivo povecanja imuniteta : "<<h.NivoPovecanjaImuniteta<<endl;
+            if (h.pojedena)
+            {
+            izlaz<<"Hrana je pojedena"<<endl;
+            }
+            else
+            {
+            izlaz<<"Hrana nije pojedena"<<endl;
+
+            }
+            izlaz<<"Cena: "<<h.cena<<endl;
+            return izlaz;
+            
+        }
 
 };
 

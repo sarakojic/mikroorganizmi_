@@ -5,7 +5,6 @@
 //  Created by Sara on 4/25/20.
 //  Copyright © 2020 Sara. All rights reserved.
 //
-
 #ifndef mikroorganizam_h
 #define mikroorganizam_h
 #include <iostream>
@@ -26,7 +25,12 @@ public:
     string getNaziv(){return naziv;}
     static int getBroj(){return brojM;}
 
-    friend ostream& operator<<(ostream& izlaz, const Mikroorganizam& m);
+    friend ostream& operator<<(ostream& izlaz, const Mikroorganizam& m)
+    {
+        izlaz<<"Mikrooranizam - ispis"<<endl;
+        izlaz<<"Naziv: "<<m.naziv<<endl<<endl;
+        return izlaz;
+    }
     ~Mikroorganizam(){
            brojM--;
        }
@@ -35,17 +39,14 @@ public:
         org.setStanje(zarazen);
         cout<<naziv<<" je zarazio "<< org.getIme()<<endl;
     }
+  
+
     
     
     
 };
-ostream& operator<<(ostream& izlaz, const Mikroorganizam& m){
-    izlaz<<"Mikrooranizam - ispis"<<endl;
-    izlaz<<"Naziv: "<<m.naziv<<endl<<endl;
 
-  
-return izlaz;
-}
+
 
 
 #endif /* mikroorganizam_h */

@@ -22,7 +22,8 @@ public:
     Organ(const Organ& o){ime=o.ime; stanje=o.stanje;}
     string getIme(){return ime;}
     stanjeOrgana getStanje(){return stanje;}
-    friend ostream& operator<<(ostream& izlaz, const Organ& o){
+    friend ostream& operator<<(ostream& izlaz, const Organ& o)
+    {
         izlaz<<"Organ- ispis"<<endl;
         izlaz<<"Ime: "<<o.ime<<endl;
         izlaz<<"Stanje organa: ";
@@ -35,7 +36,6 @@ public:
              izlaz<<"zarazen"<<endl;
          }
         izlaz<<endl;
-     
       
     return izlaz;
     }

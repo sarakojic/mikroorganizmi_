@@ -65,7 +65,10 @@ public:
     
     void dodajCoveka(const Covek & c){Mesto::dodajCoveka(c);}
     void izadji(const Covek & c){Mesto::izadji(c);cout<<" apoteka"<<endl;}
-    
+    double GustinaMesta()
+    {
+        return Mesto::GustinaMesta();
+    }
   
 
 };

@@ -28,7 +28,7 @@ public:
     Mesto(string n, double p){naziv=n; povrsina=p;}
     
     Mesto(const Mesto &m){naziv=m.naziv; povrsina=m.povrsina; ljudi=m.ljudi;}
-    double GustinaMesta()
+    virtual double GustinaMesta()
     {
         return (ljudi.size()/povrsina);
     }

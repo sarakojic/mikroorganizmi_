@@ -6,6 +6,7 @@
 //  Copyright © 2020 Sara. All rights reserved.
 //
 
+
 #ifndef Restoran_h
 #define Restoran_h
 #include"mesto.hpp"
@@ -50,8 +51,16 @@ public:
         return jelovnik[a-1];
     }
     
-    void dodajCoveka(const Covek & c){Mesto::dodajCoveka(c);}
-    void izadji(const Covek & c){Mesto::izadji(c);cout<<" restoran"<<endl;}
+    void dodajCoveka(const Covek & c)
+    {
+        Mesto::dodajCoveka(c);
+        
+    }
+    void izadji(const Covek & c)
+    {
+        Mesto::izadji(c);cout<<" restoran"<<endl;
+        
+    }
  
     void IzbaciJelo(string naziv)
     {
@@ -64,7 +73,10 @@ public:
             }
         }
     }
-    
+    double GustinaMesta()
+    {
+        return Mesto::GustinaMesta();
+    }
 };
 
 

@@ -15,9 +15,18 @@ protected:
     OblikBakterije oblik;
 
 public:
-    Bakterija() :Mikroorganizam(), oblik(koka){}
-    Bakterija(string n, OblikBakterije o ): Mikroorganizam(n), oblik(o){}
-    Bakterija(const Bakterija & b):Mikroorganizam(b.naziv), oblik(b.oblik){}
+    Bakterija() :Mikroorganizam(), oblik(koka)
+    {
+        
+    }
+    Bakterija(string n, OblikBakterije o ): Mikroorganizam(n), oblik(o)
+    {
+        
+    }
+    Bakterija(const Bakterija & b):Mikroorganizam(b.naziv), oblik(b.oblik)
+    {
+        
+    }
     
     void ZaraziOrgan(  Organ & org)
        {

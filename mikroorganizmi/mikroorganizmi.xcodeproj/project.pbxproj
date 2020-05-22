@@ -39,6 +39,10 @@
 		5614F3052454789A006C5D00 /* mikroorganizam.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mikroorganizam.hpp; sourceTree = "<group>"; };
 		5642AE202450A14300439A1C /* organ.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = organ.hpp; sourceTree = "<group>"; };
 		564E5E7124618F8900FDF45F /* bolest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bolest.txt; path = ../../mikroorganizmi/bolest.txt; sourceTree = "<group>"; };
+		56A5C7B82477E840002B0248 /* Drvo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Drvo.txt; path = ../../mikroorganizmi/Drvo.txt; sourceTree = "<group>"; };
+		56AB4CE22476C3F2001048E7 /* Mapa.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Mapa.txt; path = ../../mikroorganizmi/Mapa.txt; sourceTree = "<group>"; };
+		56AB4CE42476EB9F001048E7 /* Ljudi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Ljudi.txt; path = ../../mikroorganizmi/Ljudi.txt; sourceTree = "<group>"; };
+		56AB4CE52477071F001048E7 /* Izvestaj.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Izvestaj.txt; path = ../../mikroorganizmi/Izvestaj.txt; sourceTree = "<group>"; };
 		56B7FBDD246E8F55000BFD0E /* ZarazenOrgan.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ZarazenOrgan.hpp; sourceTree = "<group>"; };
 		56B7FBDE246E9D61000BFD0E /* Restoran.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Restoran.hpp; sourceTree = "<group>"; };
 		56B7FBF2246EB1E7000BFD0E /* Apoteka.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Apoteka.hpp; sourceTree = "<group>"; };
@@ -59,6 +63,10 @@
 		560B8ED7245078D900F6A88A = {
 			isa = PBXGroup;
 			children = (
+				56A5C7B82477E840002B0248 /* Drvo.txt */,
+				56AB4CE52477071F001048E7 /* Izvestaj.txt */,
+				56AB4CE42476EB9F001048E7 /* Ljudi.txt */,
+				56AB4CE22476C3F2001048E7 /* Mapa.txt */,
 				564E5E7124618F8900FDF45F /* bolest.txt */,
 				560B8EE2245078D900F6A88A /* mikroorganizmi */,
 				560B8EE1245078D900F6A88A /* Products */,
