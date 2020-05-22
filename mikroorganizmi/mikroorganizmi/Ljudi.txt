@@ -1,3 +1,3 @@
-100|Maris|Traj|mrtav|17|muski|20000
-100|Loka|Raini|bolestan|87|zenski|20000
-100|Fraut|Treh|bolestan|28|drugo|20000
+100|Maris|Traj|zdrav|17|muski|20000
+100|Loka|Raini|zdrav|87|zenski|20000
+100|Fraut|Treh|zdrav|28|drugo|20000
