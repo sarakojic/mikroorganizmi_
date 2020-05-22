@@ -1,0 +1,3 @@
+hydroxychloroquine|Malarija
+Vakcina za tetanus|Tetanus
+ciprofloxacin|Salmonela

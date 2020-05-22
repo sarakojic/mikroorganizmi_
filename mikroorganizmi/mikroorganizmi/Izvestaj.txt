@@ -1,0 +1,1832 @@
+
+POKRETANJE BROJ1
+Napravljen novi covek
+Covek- ispis
+Ime:  
+Prezime:  
+Godine: 0
+Pol: 0
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+POKRETANJE BROJ2
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Bolest - ispis
+Salmonela
+1767985674
+0
+Bolest - ispis
+Malarija
+0
+2
+Zarazeni organi: 
+Zarazen Organ- ispis
+Ime: Zeludacno-crevni trakt
+Stanje organa: zdrav
+Bolest - ispis
+Salmonela
+1802456072
+0
+
+Zarazen Organ- ispis
+Ime: Crvena Krvna zrnca
+Stanje organa: zdrav
+Bolest - ispis
+Malarija
+0
+2
+
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Bolest - ispis
+Tetanus
+1937075580
+0
+Zarazeni organi: 
+Zarazen Organ- ispis
+Ime: Nervni sistem
+Stanje organa: zdrav
+Bolest - ispis
+Tetanus
+0
+0
+
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+POKRETANJE BROJ1
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Bolest - ispis
+Salmonela
+847014757
+0
+Bolest - ispis
+Malarija
+0
+2
+Zarazeni organi: 
+Zarazen Organ- ispis
+Ime: Zeludacno-crevni trakt
+Stanje organa: zdrav
+Bolest - ispis
+Salmonela
+0
+0
+
+Zarazen Organ- ispis
+Ime: Crvena Krvna zrnca
+Stanje organa: zdrav
+Bolest - ispis
+Malarija
+0
+2
+
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Bolest - ispis
+Tetanus
+0
+0
+Zarazeni organi: 
+Zarazen Organ- ispis
+Ime: Nervni sistem
+Stanje organa: zdrav
+Bolest - ispis
+Tetanus
+2084123004
+0
+
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+POKRETANJE BROJ1
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Loka Raini  ide u Restoran
+POKRETANJE BROJ3
+POKRETANJE BROJ4
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Loka Raini  ide u Park
+POKRETANJE BROJ5
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Loka Raini  ide u Park
+POKRETANJE BROJ6
+POKRETANJE BROJ7
+Odabran je covek: Ran Test
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+POKRETANJE BROJ8
+POKRETANJE BROJ9
+POKRETANJE BROJ10
+POKRETANJE BROJ13--------------------
+POKRETANJE BROJ14--------------------
+POKRETANJE BROJ15--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Mali
+Prezime: Var
+Godine: 31
+Pol: 31
+zenski
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+POKRETANJE BROJ16--------------------
+POKRETANJE BROJ17--------------------
+POKRETANJE BROJ18--------------------
+POKRETANJE BROJ19--------------------
+POKRETANJE BROJ20--------------------
+POKRETANJE BROJ21--------------------
+POKRETANJE BROJ22--------------------
+POKRETANJE BROJ23--------------------
+Odabran je covek: Mali Var
+POKRETANJE BROJ24--------------------
+Odabran je covek: Mali Var
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+   ide u Park
+POKRETANJE BROJ25--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Pew
+Prezime: Mak
+Godine: 24
+Pol: 24
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+Pew Mak  ide u Park
+POKRETANJE BROJ26--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Kin
+Prezime: Ad
+Godine: 13
+Pol: 13
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+POKRETANJE BROJ27--------------------
+Odabran je covek: Kin Ad
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+POKRETANJE BROJ28--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Dir
+Prezime: Sul
+Godine: 2
+Pol: 2
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+POKRETANJE BROJ29--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Par
+Prezime: Muk
+Godine: 2
+Pol: 2
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+POKRETANJE BROJ30--------------------
+POKRETANJE BROJ31--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+POKRETANJE BROJ32--------------------
+Odabran je covek: Par Muk
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+   ide u Park
+POKRETANJE BROJ33--------------------
+POKRETANJE BROJ34--------------------
+POKRETANJE BROJ35--------------------
+Odabran je covek: Fraut Treh
+POKRETANJE BROJ36--------------------
+Odabran je covek: Maris Traj
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Loka Raini ima Malarija
+Fraut Treh ima Tetanus
+Loka Raini  ide u Restoran
+Fraut Treh  ide u Park
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Bolest - ispis
+Tetanus
+0
+0
+Zarazeni organi: 
+Zarazen Organ- ispis
+Ime: Nervni sistem
+Stanje organa: zdrav
+Bolest - ispis
+Tetanus
+0
+0
+
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Bolest - ispis
+Malarija
+0
+2
+Zarazeni organi: 
+Zarazen Organ- ispis
+Ime: Crvena Krvna zrnca
+Stanje organa: zdrav
+Bolest - ispis
+Malarija
+1634878986
+2
+
+
+Maris Traj ima Malarija
+Maris Traj je mrtav
+Loka Raini ima Tetanus
+Loka Raini je mrtav
+Fraut Treh ima Salmonela
+Maris Traj  ide u Restoran
+Maris Traj ima Malarija
+Loka Raini  ide u Park
+Loka Raini ima Tetanus
+Fraut Treh  ide u Restoran
+Fraut Treh ima Malarija
+POKRETANJE BROJ37--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Kam
+Prezime: Na
+Godine: 10
+Pol: 10
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Loka Raini ima Tetanus
+Fraut Treh ima Salmonela
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+Fraut Treh ima Malarija
+Kam Na  ide u Park
+Kam Na ima Tetanus
+Kam Na je mrtav
+POKRETANJE BROJ38--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Um
+Prezime: Fir
+Godine: 12
+Pol: 12
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Loka Raini ima Tetanus
+Fraut Treh ima Salmonela
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+Fraut Treh ima Malarija
+POKRETANJE BROJ39--------------------
+Odabran je covek: Maris Traj
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Loka Raini ima Malarija
+Fraut Treh ima Tetanus
+Loka Raini  ide u Restoran
+Fraut Treh  ide u Park
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Bolest - ispis
+Tetanus
+0
+0
+Zarazeni organi: 
+Zarazen Organ- ispis
+Ime: Nervni sistem
+Stanje organa: zdrav
+Bolest - ispis
+Tetanus
+1802456072
+0
+
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Bolest - ispis
+Malarija
+0
+2
+Zarazeni organi: 
+Zarazen Organ- ispis
+Ime: Crvena Krvna zrnca
+Stanje organa: zdrav
+Bolest - ispis
+Malarija
+0
+2
+
+
+Maris Traj ima Malarija
+Loka Raini ima Tetanus
+Fraut Treh ima Salmonela
+Maris Traj  ide u Restoran
+Maris Traj ima Malarija
+Loka Raini  ide u Park
+Loka Raini ima Tetanus
+Fraut Treh  ide u Restoran
+Fraut Treh ima Malarija
+POKRETANJE BROJ40--------------------
+Odabran je covek: Maris Traj
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Loka Raini ima Malarija
+Fraut Treh ima Tetanus
+Loka Raini  ide u Restoran
+Fraut Treh  ide u Park
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Bolest - ispis
+Tetanus
+757935405
+0
+Zarazeni organi: 
+Zarazen Organ- ispis
+Ime: Nervni sistem
+Stanje organa: zdrav
+Bolest - ispis
+Tetanus
+1634878986
+0
+
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Bolest - ispis
+Malarija
+1685862450
+2
+Zarazeni organi: 
+Zarazen Organ- ispis
+Ime: Crvena Krvna zrnca
+Stanje organa: zdrav
+Bolest - ispis
+Malarija
+0
+2
+
+
+Maris Traj ima Malarija
+Maris Traj je mrtav
+Loka Raini ima Tetanus
+Loka Raini je mrtav
+Fraut Treh ima Salmonela
+Maris Traj  ide u Restoran
+Maris Traj ima Malarija
+Loka Raini  ide u Park
+Loka Raini ima Tetanus
+Fraut Treh  ide u Restoran
+Fraut Treh ima Malarija
+POKRETANJE BROJ41--------------------
+Odabran je covek: Fraut Treh
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Maris Traj je mrtav
+Loka Raini ima Tetanus
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+POKRETANJE BROJ42--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Ina
+Prezime: Lar
+Godine: 12
+Pol: 12
+zenski
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Maris Traj je mrtav
+Loka Raini ima Tetanus
+Loka Raini je mrtav
+Fraut Treh ima Salmonela
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+Fraut Treh ima Malarija
+POKRETANJE BROJ43--------------------
+POKRETANJE BROJ44--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Jun
+Prezime: Rar
+Godine: 11
+Pol: 11
+zenski
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Maris Traj je mrtav
+Loka Raini ima Tetanus
+Fraut Treh ima Salmonela
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+Fraut Treh ima Malarija
+Jun Rar  ide u Park
+Jun Rar ima Tetanus
+Jun Rar je mrtav
+POKRETANJE BROJ45--------------------
+POKRETANJE BROJ46--------------------
+POKRETANJE BROJ47--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Ur
+Prezime: Nals
+Godine: 90
+Pol: 90
+muski
+drugo
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Maris Traj je mrtav
+Loka Raini ima Tetanus
+Fraut Treh ima Salmonela
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+Fraut Treh ima Malarija
+Ur Nals  ide u Park
+Ur Nals ima Tetanus
+Ur Nals je mrtav
+POKRETANJE BROJ48--------------------
+POKRETANJE BROJ49--------------------
+POKRETANJE BROJ50--------------------
+Odabran je covek: Fraut Treh
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Loka Raini ima Tetanus
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Park
+Fraut Treh ima Tetanus
+Fraut Treh je mrtav
+POKRETANJE BROJ51--------------------
+POKRETANJE BROJ52--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Naj
+Prezime: Lua
+Godine: 12
+Pol: 12
+zenski
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Loka Raini ima Tetanus
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+Naj Lua  ide u Park
+POKRETANJE BROJ53--------------------
+Odabran je covek: Naj Lua
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Maris Traj je mrtav
+Loka Raini ima Tetanus
+Loka Raini je mrtav
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+Fraut Treh ima Malarija
+Naj Lua  ide u Park
+Naj Lua  ide u Restoran
+Naj Lua ima Malarija
+Naj Lua je mrtav
+POKRETANJE BROJ54--------------------
+POKRETANJE BROJ55--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Nja
+Prezime: Kl
+Godine: 11
+Pol: 11
+muski
+drugo
+Stanje: zdrav_covek
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Loka Raini ima Tetanus
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+Nja Kl  ide u Restoran
+Nja Kl  ide u Park
+Nja Kl  ide u Restoran
+POKRETANJE BROJ56--------------------
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Fraut Treh ima Salmonela
+Maris Traj ima Tetanus
+Maris Traj je mrtav
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Loka Raini  ide u Apoteka
+POKRETANJE BROJ57--------------------
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Fraut Treh ima Salmonela
+Maris Traj ima Tetanus
+Maris Traj je mrtav
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Loka Raini  ide u Apoteka
+POKRETANJE BROJ58--------------------
+Odabran je covek: Maris Traj
+POKRETANJE BROJ59--------------------
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Fraut Treh ima Salmonela
+Maris Traj ima Tetanus
+Maris Traj je mrtav
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Loka Raini  ide u Apoteka
+POKRETANJE BROJ60--------------------
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Fraut Treh ima Salmonela
+Maris Traj ima Tetanus
+Maris Traj je mrtav
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Loka Raini  ide u Apoteka
+POKRETANJE BROJ61--------------------
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Fraut Treh ima Salmonela
+Maris Traj ima Tetanus
+Maris Traj je mrtav
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Loka Raini  ide u Apoteka
+POKRETANJE BROJ62--------------------
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Fraut Treh ima Salmonela
+Maris Traj ima Tetanus
+Maris Traj je mrtav
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Loka Raini  ide u Apoteka
+Loka Raini  ide u Apoteka
+POKRETANJE BROJ63--------------------
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Fraut Treh ima Salmonela
+Fraut Treh je mrtav
+Maris Traj ima Tetanus
+Maris Traj je mrtav
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Loka Raini  ide u Apoteka
+POKRETANJE BROJ64--------------------
+POKRETANJE BROJ65--------------------
+Odabran je covek: Loka Raini
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Fraut Treh ima Salmonela
+Fraut Treh je mrtav
+Maris Traj ima Tetanus
+Maris Traj je mrtav
+Maris Traj  ide u Restoran
+Fraut Treh  ide u Park
+Loka Raini  ide u Apoteka
+Loka Raini  ide u Apoteka
+Loka Raini  ide u Apoteka
+Loka Raini  ide u Restoran
+POKRETANJE BROJ66--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: bolestan
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Maris Traj je mrtav
+Loka Raini ima Tetanus
+Loka Raini je mrtav
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+     ide u Apoteka
+POKRETANJE BROJ67--------------------
+POKRETANJE BROJ68--------------------
+Napravljen novi covek
+Covek- ispis
+Ime: Fraut
+Prezime: Treh
+Godine: 28
+Pol: 28
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Maris
+Prezime: Traj
+Godine: 17
+Pol: 17
+muski
+drugo
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Napravljen novi covek
+Covek- ispis
+Ime: Loka
+Prezime: Raini
+Godine: 87
+Pol: 87
+zenski
+Stanje: mrtav
+Bolesti: 
+Zarazeni organi: 
+
+Maris Traj ima Malarija
+Maris Traj je mrtav
+Loka Raini ima Tetanus
+Loka Raini je mrtav
+Maris Traj  ide u Restoran
+Loka Raini  ide u Park
+Fraut Treh  ide u Restoran
+     ide u Apoteka
+POKRETANJE BROJ69--------------------
