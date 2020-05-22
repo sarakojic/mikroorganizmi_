@@ -1,0 +1,4 @@
+20|Maris|Traj|mrtav|17|muski|20000
+15|Loka|Raini|mrtav|87|zenski|20000
+1825966279|Fraut|Treh|mrtav|28|drugo|20000
+100|Ran|Test|bolestan|19|muski|19700
