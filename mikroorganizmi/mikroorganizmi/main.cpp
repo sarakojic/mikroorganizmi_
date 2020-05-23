@@ -447,7 +447,7 @@ int main(int argc, const char * argv[]) {
                 }
                 if(p==to_string(0))
                 {
-                    a.izadji(c);
+                    a.izadji(&c);
                     break;
                 }
                 cout<<"Ne mozemo da utvrdimo sta zelite na osnovu vaseg unosa"<<endl;

@@ -64,10 +64,10 @@ public:
 
     
     void dodajCoveka(const Covek & c){Mesto::dodajCoveka(c);}
-    void izadji(const Covek & c)
+    void izadji(const Covek * c)
     {
-        cout<<c.getIme()<<" "<< c.getPrezime()<<" je izas";
-        if (c.getPol()==zenski)
+        cout<<c->getIme()<<" "<< c->getPrezime()<<" je izas";
+        if (c->getPol()==zenski)
         {
             cout<<"la";
         }
@@ -76,9 +76,10 @@ public:
             cout<<"ao";
         }
         cout<<" iz "<<naziv;
+        cout<<c->getIme()<<endl;
         for (auto i = ljudi.begin(); i!= ljudi.end(); i ++)
         {
-            if (c.getIme()==(*i).getIme()&&c.getPrezime()==(*i).getPrezime())
+            if (c->getIme()==(*i).getIme()&&c->getPrezime()==(*i).getPrezime())
             {
                 ljudi.erase(i);
             }
