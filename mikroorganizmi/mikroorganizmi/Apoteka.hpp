@@ -78,7 +78,7 @@ public:
         cout<<" iz "<<naziv;
         for (auto i = ljudi.begin(); i!= ljudi.end(); i ++)
         {
-            if (c.getIme()==(i)->getIme()&&c.getPrezime()==(i)->getPrezime())
+            if (c.getIme()==(*i).getIme()&&c.getPrezime()==(*i).getPrezime())
             {
                 ljudi.erase(i);
             }
