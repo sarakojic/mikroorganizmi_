@@ -56,9 +56,26 @@ public:
         Mesto::dodajCoveka(c);
         
     }
-    void izadji(const Covek & c)
+    void izadji(Covek & c)
     {
-        Mesto::izadji(c);cout<<" restoran"<<endl;
+        cout<<c.getIme()<<" "<< c.getPrezime()<<" je izas";
+        if (c.getPol()==zenski)
+        {
+            cout<<"la";
+        }
+        else
+        {
+            cout<<"ao";
+        }
+        cout<<" iz "<<naziv;
+        for (auto i = ljudi.begin(); i!= ljudi.end(); i ++)
+        {
+            if (c.getIme()==(i)->getIme()&&c.getPrezime()==(i)->getPrezime())
+            {
+                ljudi.erase(i);
+            }
+        }
+
         
     }
  

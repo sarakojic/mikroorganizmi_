@@ -65,22 +65,18 @@ vector<string> splitFile(string nazivFajla)
 
 void pisiTxt(string nazivFajla, string tekst, char mode='a')
 {
-    /// fajl je sada objekat klase ofstream
+
     ofstream fajl;
 
-    /// koristimo metodu open za otvaranja fajla
-    /// kao parametar prosledjujemo naziv fajla i njegovu ekstenziju
+
     if (mode=='a'){
         fajl.open (nazivFajla, ios_base::app);
     }else{
         fajl.open (nazivFajla);
     }
 
-    /// pisanje vrsimo tako sto umesto cout pisemo naziv fajla
-    /// koristimo operator <<
     fajl << tekst;
 
-    /// na kraju zatvaramo fajl
     fajl.close();
 
 }

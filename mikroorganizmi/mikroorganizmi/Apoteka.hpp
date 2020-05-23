@@ -64,7 +64,28 @@ public:
 
     
     void dodajCoveka(const Covek & c){Mesto::dodajCoveka(c);}
-    void izadji(const Covek & c){Mesto::izadji(c);cout<<" apoteka"<<endl;}
+    void izadji(const Covek & c)
+    {
+        cout<<c.getIme()<<" "<< c.getPrezime()<<" je izas";
+        if (c.getPol()==zenski)
+        {
+            cout<<"la";
+        }
+        else
+        {
+            cout<<"ao";
+        }
+        cout<<" iz "<<naziv;
+        for (auto i = ljudi.begin(); i!= ljudi.end(); i ++)
+        {
+            if (c.getIme()==(i)->getIme()&&c.getPrezime()==(i)->getPrezime())
+            {
+                ljudi.erase(i);
+            }
+        }
+
+        
+    }
     double GustinaMesta()
     {
         return Mesto::GustinaMesta();

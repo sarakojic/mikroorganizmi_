@@ -37,7 +37,7 @@ public:
     virtual int TipMesta(){return 0;}
     unsigned long int GetBrojLjudi(){return ljudi.size();}
     vector<Covek> getLjudi(){return ljudi;}
-    virtual void izadji(const Covek & c)
+    void izadji( const Covek & c)
     {
         cout<<c.getIme()<<" "<< c.getPrezime()<<" je izas";
         if (c.getPol()==zenski)
